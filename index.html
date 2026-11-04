@@ -585,8 +585,10 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
   const km = (m, d = 1) => (m / 1000).toLocaleString("en-GB", { minimumFractionDigits: d, maximumFractionDigits: d });
   const hours = (s) => (s / 3600).toLocaleString("en-GB", { maximumFractionDigits: 0 });
   const hms = (s) => { const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60); return h ? `${h}h ${String(m).padStart(2, "0")}m` : `${m} min`; };
-  const dateFmt = (iso) => new Date(iso).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
-  const dateShort = (iso) => new Date(iso).toLocaleDateString("en-GB", { day: "2-digit", month: "short" });
+  // Strava "local" dates carry a Z suffix: use the calendar date as written, no timezone shift.
+  const dayOf = (iso) => new Date(String(iso).slice(0, 10) + "T00:00:00Z");
+  const dateFmt = (iso) => dayOf(iso).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" });
+  const dateShort = (iso) => dayOf(iso).toLocaleDateString("en-GB", { day: "2-digit", month: "short", timeZone: "UTC" });
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   function decodePolyline(str) {
