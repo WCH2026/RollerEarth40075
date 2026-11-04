@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T13:59:49.441Z",
+  "generated_at": "2026-11-04T14:09:34.765Z",
   "source": "strava",
   "sport_types": [
     "InlineSkate"
@@ -44,10 +44,12 @@
   "journey": {
     "start_date": "2026-10-06",
     "goal_km": 40075,
-    "count": 21,
-    "distance_m": 1220524,
-    "moving_time_s": 295333,
-    "elevation_m": 1303
+    "count": 22,
+    "distance_m": 1288994,
+    "moving_time_s": 312639,
+    "elevation_m": 1405,
+    "skate_days": 18,
+    "last_skate_date": "2026-11-04"
   },
   "weekly": [
     {
@@ -208,7 +210,7 @@
       "avg_speed_kmh": 15.63,
       "max_speed_kmh": 53.74,
       "avg_hr": null,
-      "kudos": 5,
+      "kudos": 6,
       "polyline": "it~FaieyRhFaCpBvB|K{GzBrEjChCtIiFv@d@fEk@qBhDz@gClC{@zBXdFi@L~ClCpMdBlD`@rDbEnPJ|DzA|Eb@hHdAfFzBtZZxGk@lPW|VX~[u@|CAt@`BhDnCvA|Ch@V~@UxA}EpEwAxDN`LbAxF[dENx@t@\\aCv@dApHtACtNmDjPkG|OgJvHmGrEuFrC{Ah@PlJ~N`@K?LQGIf@kB^sDfCi@`AlBbAbEfDw@vA]jDDbEl@rClAhCpB~B~S~LMpAqDvEuBfD{LwG{DeAmByAeFsAgH{@oHQ}BzIOtDnBbCbLnDfG|ElIhDlBvABt@}CfFcBs@W^_C`@ZxBOl@vAt@eAjB{B}@eFMrEJpCv@vBgDBo@b@F~E_KsEyCyF}BsEaEgIiDuBa@sAaAs@}AL_F`BuCf@wCvKn@lLbCfB`BlCf@bNhHnHmMiT{LkCsDy@yBi@aG`@{Ev@eBiEcDmAQWk@bEiEdCw@iK{O_DrAmDtEcA~@sEvDyUdNaWbImFbAc@Wu@oHfCm@sAo@`@kEoAsHIoKpAkDbFcFP{Ay@gAeAAiDoA}AuB_@}Ax@cCQw][i@\\Wh@sJWoI\\sGD}HoCw`@qA_IM{DmBsHRaBwEaRy@yFuAaCmCaNQwH_FcMuA}FeALiBiJoAYm@^Om@t@e@KVkd@qrC{Mke@kCqKNaGaAgEHeFkEkMqFwQuAuHyBeFyBoNqBkGaDqD}@sC|HsDsDiNHwCaCsKy@eHKwD^wC}@oGH}C_@mEUoKsEwEqOkH{DjG{Aj@qB@_JcC_PiGuAcA}g@kP}CReCvG_Bq@]f@_@EiAu@c@r@o@JgNoEqBnCmDq@Ic@h@GEr@hCh@r@UhA}BxMjEx@?Zs@jAz@jAu@~At@|BqG~CObj@bQ`@n@vEzAVMbCbBvMfE~BLbBi@|D{GzOtHlCbBnAzAr@`Yp@vDa@jEXzHlDnOE|DrD|MsH`DI\\x@jCdDrDfBhFtBfNhC|GBrBlF`PGdAl@\\pCvHfB|GFtAi@xBrAxDBlIvRls@hD~Iz@tFOb@y@EgAb@{@vAUpCR~Cz@vBvFfFJnBv@~FhAx@tAP^t@XtEzAvGLfEdA~DVbJtCtKhC|PpApEvArBd@zGbArDvCrJl@l@`EhMKvAc@TeEXgB[mHnAqAYeGnDy@^oC}BwBqEeF~Ck@~@y@D_Ar@[_@]HeAmByI|Ek@u@",
       "url": "https://www.strava.com/activities/20856386204"
     },
