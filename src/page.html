@@ -657,7 +657,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     $("j-left").textContent = Math.max(0, SITE.goalKm - doneKm).toLocaleString("en-GB", { maximumFractionDigits: 0 });
     $("j-acts").textContent = (src.count ?? 0).toLocaleString("en-GB");
     $("j-since").textContent = j && j.start_date
-      ? `Day ${Math.max(1, Math.floor((Date.now() - new Date(j.start_date + "T00:00:00")) / 86400000) + 1)} · counting since ${dateFmt(j.start_date)}`
+      ? (typeof j.skate_days === "number" ? `Day ${j.skate_days} on skates · ` : "") + `since ${dateFmt(j.start_date)}`
       : `Counting this year's skating until the expedition start date is confirmed`;
     requestAnimationFrame(() => {
       $("j-fill").style.width = pct + "%";

@@ -169,13 +169,18 @@ async function main() {
     ? STRAVA_JOURNEY_START
     : `${now.getUTCFullYear()}-01-01`;
   const journeyStart = Date.parse(journeyStartIso + "T00:00:00Z") / 1000;
-  const since = Math.min(yearStart, twelveMonthsAgo, journeyStart);
+  const since = Math.min(yearStart, twelveMonthsAgo, journeyStart - 86400);
 
   const activities = (await fetchActivitiesSince(token, since)).filter(matchesSport);
   const ytd = activities.filter((a) => new Date(a.start_date).getUTCFullYear() === now.getUTCFullYear());
   const last4w = activities.filter((a) => now - new Date(a.start_date) <= 28 * 86400 * 1000);
   const last12m = activities.filter((a) => now - new Date(a.start_date) <= 365 * 86400 * 1000);
-  const journeyActs = activities.filter((a) => new Date(a.start_date).getTime() / 1000 >= journeyStart);
+  // Use the athlete's local calendar date (start_date_local) so a morning skate on the
+  // start day in Singapore is not lost to the UTC offset.
+  const localDay = (a) => String(a.start_date_local || a.start_date).slice(0, 10);
+  const journeyActs = activities.filter((a) => localDay(a) >= journeyStartIso);
+  // Skating days: distinct local dates with at least one counted activity (Konstantin's "DAY N").
+  const skateDays = [...new Set(journeyActs.map(localDay))].sort();
 
   const byType = {};
   for (const a of last12m) {
@@ -204,7 +209,7 @@ async function main() {
       by_sport_type: Object.fromEntries(Object.entries(byType).map(([k, v]) => [k, totals(v)])),
     },
     // Expedition counter: everything skated since the journey start date.
-    journey: { start_date: journeyStartIso, goal_km: 40075, ...totals(journeyActs) },
+    journey: { start_date: journeyStartIso, goal_km: 40075, ...totals(journeyActs), skate_days: skateDays.length, last_skate_date: skateDays[skateDays.length - 1] || null },
     weekly: weeklySeries(last12m, 16),
     records: records(last12m),
     recent: activities.slice(0, Number(STRAVA_RECENT_COUNT)).map(slimActivity),
@@ -212,7 +217,7 @@ async function main() {
 
   await mkdir(dirname(OUTPUT), { recursive: true });
   await writeFile(OUTPUT, JSON.stringify(data, null, 2));
-  console.log(`Wrote ${OUTPUT}: ${activities.length} activities, ${data.recent.length} recent, YTD ${(data.totals.year_to_date.distance_m / 1000).toFixed(1)} km, journey ${(data.journey.distance_m / 1000).toFixed(1)} km since ${journeyStartIso}`);
+  console.log(`Wrote ${OUTPUT}: ${activities.length} activities, ${data.recent.length} recent, YTD ${(data.totals.year_to_date.distance_m / 1000).toFixed(1)} km, journey ${(data.journey.distance_m / 1000).toFixed(1)} km on ${data.journey.skate_days} skating days since ${journeyStartIso}`);
 }
 
 main().catch((e) => {
