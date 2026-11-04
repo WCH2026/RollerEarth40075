@@ -81,7 +81,11 @@ Actions → **Update Strava data** → Run workflow. Через минуту `da
 Чтобы встроить YouTube Shorts прямо на сайт: в `src/page.html` в блоке `SITE` указать ID роликов, например
 `youtubeShortIds: ["abc123XYZ", "def456UVW"]` (ID — часть ссылки после `/shorts/`). Пересобрать.
 
-## Свой домен (по желанию)
+## Домен
+
+Сайт: https://rollerearth40075.com (регистратор Fozzy, DNS у Fozzy: 4 записи A на 185.199.108–111.153 и CNAME www → wch2026.github.io). Файл `CNAME` в корне репозитория не удалять.
+
+## Свой домен (общая инструкция)
 Купить домен (≈10–15 USD в год) → у регистратора создать CNAME‑запись `www` → `<логин>.github.io` → в GitHub Settings → Pages → Custom domain ввести домен → включить Enforce HTTPS.
 
 ## Ограничения Strava
