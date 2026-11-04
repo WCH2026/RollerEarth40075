@@ -1,0 +1,724 @@
+<!-- HEAD -->
+<title>Roller Earth 40075 — Konstantin Lyuik, around the world on inline skates</title>
+<meta name="description" content="Roller Earth 40075: Konstantin Lyuik is skating the length of the equator, 40,075 km, in four years. Singapore record holder: 203.79 km around Singapore in 24 hours. Training synced from Strava.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/logo-round-64.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/logo-round-192.png">
+<link rel="apple-touch-icon" href="assets/logo-round-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Roller Earth 40075 — around the world on inline skates">
+<meta property="og:description" content="Konstantin Lyuik is skating the length of the equator, 40,075 km, in four years. Singapore record: 203.79 km in 24 hours. One life. One planet. One journey.">
+<meta property="og:image" content="assets/logo-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* ------------------------------------------------------------------
+   Variant B — "Night ride". Dark cinematic: near-black ground, one
+   full-bleed photo under the headline, orange (the route line on the record map)
+   for the kilometres, condensed uppercase numerals. Numbered chapters.
+   ------------------------------------------------------------------ */
+:root {
+  color-scheme: dark;
+  --bg: #000000;
+  --surface: #0f0f10;
+  --surface-2: #161617;
+  --line: #232325;
+  --line-strong: #3a3a3d;
+  --fg: #ffffff;
+  --fg-2: #c9c9cc;
+  --muted: #8a8a90;
+  --orange: #ff5a1f;
+  --orange-deep: #e04a12;
+  --orange-dim: rgba(255, 90, 31, .16);
+  --display: "Oswald", "Arial Narrow", Impact, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --gl: max(16px, env(safe-area-inset-left, 0px));
+  --gr: max(16px, env(safe-area-inset-right, 0px));
+  --radius: 10px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: var(--gl); padding-right: var(--gr); }
+.num { font-variant-numeric: tabular-nums; }
+h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .005em; line-height: 1; text-wrap: balance; }
+h1 { font-size: clamp(52px, 9.5vw, 136px); font-weight: 700; line-height: .92; }
+h2 { font-size: clamp(36px, 5vw, 68px); }
+h3 { font-size: 24px; }
+p { margin: 0; }
+.eyebrow { font-family: var(--display); font-size: 13px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+.eyebrow.orange { color: var(--orange); }
+.chapter { display: flex; align-items: center; gap: 14px; }
+.chapter .n { font-family: var(--display); font-size: 13px; font-weight: 600; letter-spacing: .1em; color: var(--orange); border: 1px solid var(--orange); padding: 3px 8px 2px; line-height: 1; }
+.chapter::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.prose { font-size: 17px; line-height: 1.65; color: var(--fg-2); max-width: 62ch; }
+.prose p + p { margin-top: 16px; }
+.prose a { color: var(--orange); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.todo { background: #ffe14d; color: #3a2e00; padding: 1px 6px; border-radius: 3px; font-size: .92em; font-weight: 500; box-decoration-break: clone; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 4px; border: 1px solid var(--line-strong); background: transparent; color: var(--fg); font-family: var(--display); font-weight: 500; font-size: 16px; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; line-height: 1; transition: background .15s ease, color .15s ease, border-color .15s ease; }
+.btn:hover { border-color: var(--fg); background: var(--surface-2); }
+.btn.orange { background: var(--orange); border-color: var(--orange); color: #000000; }
+.btn.orange:hover { background: #ff7a45; border-color: #ff7a45; }
+.btn svg { width: 16px; height: 16px; fill: currentColor; }
+section { padding: clamp(64px, 9vw, 120px) 0; }
+.head { display: grid; gap: 16px; margin-bottom: clamp(32px, 4vw, 52px); }
+.head h2 { margin-top: 6px; }
+.head p { font-size: 17px; color: var(--fg-2); max-width: 60ch; }
+
+/* ---- Header ----------------------------------------------------- */
+header { position: sticky; top: 0; z-index: 20; background: rgba(11, 12, 15, .78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+header .in { max-width: 1200px; margin: 0 auto; padding: 0 var(--gr) 0 var(--gl); height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 19px; text-transform: uppercase; letter-spacing: .06em; text-decoration: none; white-space: nowrap; }
+.brand .mark { width: 36px; height: 36px; border-radius: 50%; box-shadow: 0 0 0 1px var(--line-strong); }
+.brand small { font-weight: 400; color: var(--muted); font-size: 12px; letter-spacing: .18em; margin-left: 4px; }
+nav { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; justify-content: flex-end; }
+.brand { flex: none; }
+nav::-webkit-scrollbar { display: none; }
+nav a { text-decoration: none; font-family: var(--display); font-size: 14px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--fg-2); padding: 8px 12px; white-space: nowrap; border-bottom: 2px solid transparent; }
+nav a:hover { color: var(--orange); }
+nav a.cta { color: var(--orange); border: 1px solid var(--orange); margin-left: 8px; padding: 7px 14px; }
+nav a.cta:hover { background: var(--orange); color: #000000; }
+
+/* ---- Hero -------------------------------------------------------- */
+.hero { position: relative; min-height: min(92vh, 860px); display: flex; align-items: flex-end; padding: 0; overflow: hidden; border-bottom: 1px solid var(--line); }
+.hero .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% 30%; filter: saturate(.85) contrast(1.05); }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 12, 15, .35) 0%, rgba(11, 12, 15, .25) 35%, rgba(11, 12, 15, .92) 75%, #000000 100%), linear-gradient(90deg, rgba(11, 12, 15, .7) 0%, rgba(11, 12, 15, 0) 60%); z-index: 1; }
+.hero .wrap { position: relative; z-index: 2; width: 100%; padding-top: clamp(140px, 24vh, 260px); padding-bottom: clamp(44px, 6vw, 80px); }
+.hero .eyebrow { margin-bottom: 20px; }
+.hero h1 { max-width: 12ch; }
+.hero h1 em { font-style: normal; color: var(--orange); }
+.hero .lead { font-size: clamp(16px, 1.5vw, 19px); color: var(--fg-2); max-width: 56ch; line-height: 1.55; margin-top: 26px; }
+.hero .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.hero .tag { position: absolute; right: var(--gr); top: 90px; z-index: 2; font-family: var(--display); text-transform: uppercase; text-align: right; line-height: 1; }
+.hero .tag b { display: block; font-size: clamp(30px, 4vw, 56px); font-weight: 700; color: var(--orange); letter-spacing: .01em; }
+.hero .tag span { display: block; font-size: 12px; letter-spacing: .2em; color: var(--fg-2); margin-top: 8px; }
+
+/* ---- Equator counter --------------------------------------------- */
+.equator { padding: clamp(40px, 5vw, 72px) 0; border-bottom: 1px solid var(--line); background: var(--surface); position: relative; overflow: hidden; }
+.equator::after { content: ""; position: absolute; inset: 0; background: radial-gradient(700px 240px at 10% 120%, var(--orange-dim), transparent 70%); pointer-events: none; }
+.equator .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: auto 1fr; gap: clamp(24px, 4vw, 60px); align-items: center; }
+.globe { width: clamp(120px, 14vw, 170px); height: auto; }
+.globe .sea { fill: none; stroke: var(--line-strong); stroke-width: 1.2; }
+.globe .eq { fill: none; stroke: var(--orange); stroke-width: 3; stroke-linecap: round; filter: drop-shadow(0 0 6px rgba(255, 90, 31, .6)); }
+.globe .eq-bg { fill: none; stroke: var(--line-strong); stroke-width: 3; stroke-linecap: round; }
+.counter .eyebrow { margin-bottom: 10px; }
+.counter .big { font-family: var(--display); font-weight: 700; line-height: .9; font-size: clamp(64px, 10vw, 150px); display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; color: var(--orange); text-transform: uppercase; }
+.counter .big small { font-size: clamp(18px, 2.2vw, 30px); font-weight: 500; color: var(--fg-2); letter-spacing: .08em; }
+.counter .big .of { color: var(--muted); font-weight: 500; font-size: clamp(22px, 3vw, 46px); letter-spacing: .04em; }
+.track { position: relative; margin-top: 26px; height: 36px; }
+.track .rail { position: absolute; left: 0; right: 0; top: 14px; height: 6px; background: var(--line-strong); }
+.track .fill { position: absolute; left: 0; top: 14px; height: 6px; width: 0; background: var(--orange); box-shadow: 0 0 12px rgba(255, 90, 31, .55); transition: width 1.2s cubic-bezier(.2, .8, .2, 1); min-width: 4px; }
+.track .ticks { position: absolute; inset: 0; display: flex; justify-content: space-between; }
+.track .ticks i { position: relative; width: 1px; height: 100%; }
+.track .ticks i::before { content: ""; position: absolute; top: 9px; left: 0; width: 1px; height: 16px; background: var(--muted); }
+.track .ticks i::after { content: attr(data-l); position: absolute; top: 26px; left: 0; transform: translateX(-50%); font-family: var(--display); font-size: 11px; color: var(--muted); white-space: nowrap; letter-spacing: .1em; }
+.track .ticks i:first-child::after { transform: none; }
+.track .ticks i:last-child::after { transform: translateX(-100%); }
+.track .marker { position: absolute; top: 9px; width: 16px; height: 16px; background: var(--orange); border: 3px solid var(--surface); box-shadow: 0 0 0 2px var(--orange); transform: translateX(-50%) rotate(45deg); left: 0; transition: left 1.2s cubic-bezier(.2, .8, .2, 1); }
+.counter .foot { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 36px; font-size: 14px; color: var(--muted); }
+.counter .foot b { color: var(--fg); font-weight: 600; }
+
+/* ---- Record ----------------------------------------------------- */
+.record .top { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 5vw, 80px); align-items: start; margin-top: 40px; }
+.record .figure { font-family: var(--display); font-weight: 700; font-size: clamp(90px, 14vw, 190px); line-height: .88; color: var(--orange); margin: 10px 0 10px; display: flex; align-items: baseline; gap: 12px; }
+.record .figure small { font-size: clamp(18px, 2.4vw, 32px); font-weight: 500; color: var(--fg-2); letter-spacing: .08em; text-transform: uppercase; }
+.record h2 { font-size: clamp(26px, 3vw, 40px); font-weight: 500; color: var(--fg-2); margin-bottom: 28px; }
+.timeline { margin: 36px 0 8px; display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: center; font-family: var(--display); }
+.timeline .t { font-size: 34px; font-weight: 600; line-height: 1; }
+.timeline .t span { display: block; font-size: 12px; font-weight: 400; color: var(--muted); letter-spacing: .18em; text-transform: uppercase; margin-top: 8px; }
+.timeline .bar { position: relative; height: 3px; background: var(--orange); }
+.timeline .bar::before, .timeline .bar::after { content: ""; position: absolute; top: 50%; width: 9px; height: 9px; background: var(--orange); transform: translateY(-50%) rotate(45deg); }
+.timeline .bar::before { left: -2px; } .timeline .bar::after { right: -2px; }
+.timeline .bar i { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); font-style: normal; font-size: 12px; font-weight: 500; color: var(--orange); white-space: nowrap; letter-spacing: .18em; text-transform: uppercase; }
+.facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 28px; margin-top: 44px; border-top: 1px solid var(--line); }
+.facts > div { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.facts .k { font-family: var(--display); font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+.facts .v { font-size: 16px; font-weight: 500; margin-top: 4px; }
+.thanks { margin-top: 24px; font-size: 14px; color: var(--muted); line-height: 1.6; }
+.thanks b { color: var(--fg-2); font-weight: 600; }
+.cert { position: sticky; top: 88px; margin: 0; }
+.cert img { width: 100%; border-radius: 6px; box-shadow: 0 40px 80px rgba(0, 0, 0, .6), 0 0 0 1px var(--line); }
+.cert figcaption { margin-top: 18px; font-size: 13px; color: var(--muted); text-align: center; }
+.gallery { display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px; margin-top: clamp(48px, 6vw, 80px); }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); }
+.gallery figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
+
+/* ---- Video ------------------------------------------------------- */
+.videos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 24px; }
+.videos:empty { display: none; }
+.videos iframe { width: 100%; aspect-ratio: 9 / 16; border: 0; border-radius: var(--radius); background: #000; }
+.channels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.ch { display: flex; align-items: center; gap: 16px; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color .15s ease, background .15s ease; }
+.ch:hover { border-color: var(--orange); background: var(--surface-2); }
+.ch .ic { width: 46px; height: 46px; border-radius: 6px; display: grid; place-items: center; background: var(--fg); color: var(--bg); flex: none; }
+.ch .ic svg { width: 22px; height: 22px; fill: currentColor; }
+.ch b { display: block; font-family: var(--display); font-weight: 500; font-size: 20px; text-transform: uppercase; letter-spacing: .06em; }
+.ch span { display: block; font-size: 13px; color: var(--muted); margin-top: 3px; }
+.ch .arrow { margin-left: auto; color: var(--orange); font-size: 20px; }
+
+/* ---- Training ---------------------------------------------------- */
+.training { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.training .head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; }
+.training .head > div { display: grid; gap: 14px; max-width: 760px; }
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.tile { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 22px 20px; }
+.tile .eyebrow { margin-bottom: 14px; }
+.tile .v { font-family: var(--display); font-weight: 600; font-size: clamp(38px, 4vw, 56px); line-height: 1; color: var(--orange); }
+.tile .v small { font-size: 15px; font-weight: 500; color: var(--muted); margin-left: 6px; letter-spacing: .1em; text-transform: uppercase; }
+.tile .d { font-size: 13px; color: var(--muted); margin-top: 10px; }
+.chart { margin-top: 12px; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+.ch-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+.legend { font-size: 13px; color: var(--muted); }
+#weekly { width: 100%; height: auto; display: block; }
+#weekly text { font-family: var(--body); font-size: 11px; fill: var(--muted); }
+#weekly .grid { stroke: var(--line); stroke-width: 1; }
+#weekly .bar { fill: #4a4f5a; }
+#weekly .bar.now { fill: var(--orange); }
+#weekly .zero { fill: var(--line-strong); }
+.split { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 12px; margin-top: 12px; }
+.panel { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+.panel .eyebrow { margin-bottom: 16px; }
+.bests { display: grid; }
+.best { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 14px 0; border-top: 1px solid var(--line); align-items: baseline; }
+.best:first-child { border-top: 0; padding-top: 0; }
+.best .l { font-size: 13px; color: var(--muted); }
+.best .v { font-family: var(--display); font-weight: 600; font-size: 32px; line-height: 1; grid-row: 1 / span 2; grid-column: 2; align-self: center; text-align: right; color: var(--orange); }
+.best .v small { font-size: 12px; font-weight: 500; color: var(--muted); margin-left: 4px; letter-spacing: .1em; text-transform: uppercase; }
+.best .n { font-size: 14px; }
+.best .n a { text-decoration: none; font-weight: 500; }
+.best .n a:hover { color: var(--orange); }
+.best .n span { color: var(--muted); }
+.acts { display: grid; }
+.act { display: grid; grid-template-columns: 72px 1fr auto; gap: 16px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); text-decoration: none; color: inherit; }
+.act:first-child { border-top: 0; padding-top: 0; }
+.act:hover .title { color: var(--orange); }
+.route { width: 72px; height: 48px; }
+.route path { fill: none; stroke: var(--fg-2); stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; }
+.route .start { fill: var(--orange); }
+.act .title { font-weight: 600; font-size: 15px; line-height: 1.3; }
+.act .meta { font-size: 12px; color: var(--muted); font-weight: 400; margin-top: 3px; }
+.act .figs { display: flex; gap: 18px; text-align: right; }
+.act .figs b { display: block; font-family: var(--display); font-weight: 600; font-size: 19px; line-height: 1; }
+.act .figs span { display: block; font-size: 11px; color: var(--muted); margin-top: 4px; letter-spacing: .08em; text-transform: uppercase; }
+.note { font-size: 13px; color: var(--muted); margin-top: 16px; }
+.demo-note { display: none; margin-top: 16px; padding: 14px 18px; border-radius: var(--radius); background: #ffe14d; color: #3a2e00; font-size: 14px; }
+.demo-note[data-show="1"] { display: block; }
+
+/* ---- About ------------------------------------------------------- */
+.about .grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 5vw, 80px); align-items: start; margin-top: 40px; }
+.about h2 { margin-bottom: 26px; }
+.kv { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 0 24px; border-top: 1px solid var(--line); }
+.kv dt, .kv dd { margin: 0; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.kv dt { font-family: var(--display); font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); align-self: center; }
+.kv dd { font-weight: 500; }
+.kv dd a { color: var(--orange); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.portrait { margin: 0 0 24px; }
+.portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 12% 62%; border-radius: var(--radius); border: 1px solid var(--line); filter: saturate(.9); }
+
+/* ---- Club -------------------------------------------------------- */
+.club { background: var(--orange); color: #000000; }
+.club .grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
+.club .chapter .n { color: #000000; border-color: #000000; }
+.club .chapter::after { background: rgba(11, 12, 15, .25); }
+.club .eyebrow { color: rgba(11, 12, 15, .65); }
+.club h2 { margin: 18px 0 20px; font-size: clamp(48px, 7vw, 100px); }
+.club .prose { color: rgba(11, 12, 15, .85); }
+.club .todo { background: rgba(11, 12, 15, .9); color: #ffe14d; }
+.club .links-col { display: grid; gap: 22px; justify-items: start; }
+.club .poster { width: min(100%, 380px); border-radius: 10px; background: #fff; }
+.club .links { display: flex; flex-wrap: wrap; gap: 10px; }
+.club .btn { border-color: #000000; color: #000000; }
+.club .btn:hover { background: rgba(11, 12, 15, .08); }
+.club .btn.ink { background: #000000; color: var(--orange); }
+.club .btn.ink:hover { background: #1c1f26; }
+
+/* ---- Footer ------------------------------------------------------ */
+footer { padding: 34px 0; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--orange); }
+
+/* ---- Responsive -------------------------------------------------- */
+/* ---- Partners ---------------------------------------------------- */
+.partners { background: var(--bg); border-top: 1px solid var(--line); }
+.partners .head { margin-top: 26px; }
+.sponsors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.sp { display: flex; flex-direction: column; gap: 16px; padding: 26px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: inherit; transition: border-color .15s ease, background .15s ease; }
+a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
+.sp .logo { height: 72px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--line-strong); border-radius: 6px; background: #000; padding: 10px 16px; }
+.sp .logo img { max-height: 52px; max-width: 100%; object-fit: contain; }
+.sp .logo .wordmark { font-family: var(--display); font-weight: 700; font-size: 30px; letter-spacing: .04em; text-transform: uppercase; color: var(--fg); line-height: 1; }
+.sp .logo .wordmark i { font-style: normal; color: var(--orange); }
+.sp .logo .wordmark.small { font-size: 20px; letter-spacing: .12em; text-align: center; }
+.sp .role { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
+.sp b { font-family: var(--display); font-weight: 500; font-size: 20px; text-transform: uppercase; letter-spacing: .06em; }
+.sp p { font-size: 14px; color: var(--fg-2); line-height: 1.55; }
+.sp .more { margin-top: auto; font-size: 13px; color: var(--muted); }
+.sp.join { background: transparent; border-style: dashed; justify-content: center; align-items: flex-start; }
+.sp.join .btn { margin-top: 4px; }
+.partners .note { font-size: 13px; color: var(--muted); margin-top: 18px; }
+
+@media (max-width: 960px) {
+  .videos { grid-template-columns: repeat(3, 1fr); }
+  .brand small { display: none; }
+  .record .top, .about .grid, .club .grid { grid-template-columns: 1fr; }
+  .sponsors { grid-template-columns: 1fr; }
+  .cert { position: static; max-width: 460px; }
+  .tiles { grid-template-columns: repeat(2, 1fr); }
+  .split { grid-template-columns: 1fr; }
+  .channels { grid-template-columns: 1fr; }
+  .hero .tag { top: 76px; }
+}
+@media (max-width: 600px) {
+  .videos { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .brand { font-size: 15px; gap: 8px; }
+  .brand .mark { width: 30px; height: 30px; }
+  nav { justify-content: flex-start; }
+  .hero { min-height: 80vh; }
+  .hero .wrap { padding-top: 150px; }
+  .hero .tag { right: var(--gr); }
+  .equator .wrap { grid-template-columns: 1fr; }
+  .globe { width: 96px; }
+  .track .ticks i:nth-child(even)::after { display: none; }
+  .facts { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: 1fr; }
+  .tiles { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .tile { padding: 16px; }
+  .act { grid-template-columns: 56px 1fr; }
+  .route { width: 56px; height: 40px; }
+  .act .figs { grid-column: 2; justify-content: flex-start; text-align: left; gap: 14px; }
+  .timeline .t { font-size: 26px; }
+  .brand small { display: none; }
+  nav a.cta { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .track .fill, .track .marker, .btn, .ch { transition: none; }
+}
+</style>
+<!-- /HEAD -->
+
+<header>
+  <div class="in">
+    <a class="brand" href="#top"><img class="mark" src="assets/logo-round-192.png" alt="" width="36" height="36">Roller Earth 40075 <small>KONSTANTIN LYUIK</small></a>
+    <nav aria-label="Sections">
+      <a href="#record">Record</a>
+      <a href="#video">Video</a>
+      <a href="#training">Training</a>
+      <a href="#about">About</a>
+      <a href="#club">Club</a>
+      <a href="#partners">Partners</a>
+      <a class="cta" id="nav-strava" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">Strava</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img class="bg" src="assets/record-poster.jpg" alt="Konstantin Lyuik and Dmitry Parfentyev at Merlion Park holding their inline skates after the 24-hour record" fetchpriority="high">
+    <div class="tag num" aria-hidden="true"><b>203.79 km</b><span>24 hours · Singapore record</span></div>
+    <div class="wrap">
+      <p class="eyebrow orange">One life · One planet · One journey</p>
+      <h1>Around the world <em>on inline skates.</em></h1>
+      <p class="lead">Konstantin Lyuik is skating the length of the equator: 40,075 kilometres in four years, counted kilometre by kilometre on Strava. Started on 6 October 2026 from East Coast Park Service Road, Singapore 449875. Finish: October 2030.</p>
+      <div class="cta">
+        <a class="btn orange" href="#record">The Singapore record</a>
+        <a class="btn" id="link-strava" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 17.9 13.5 14h-3l4.9 9.9 4.9-9.9h-3zM10.2 0 2.6 14h4.4l3.2-6.2L13.4 14h4.4z"/></svg>
+          Follow on Strava
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="equator" aria-labelledby="counter-label">
+    <div class="wrap">
+      <svg class="globe" viewBox="0 0 100 100" aria-hidden="true">
+        <circle class="sea" cx="50" cy="50" r="46"/>
+        <ellipse class="sea" cx="50" cy="50" rx="22" ry="46"/>
+        <ellipse class="sea" cx="50" cy="50" rx="40" ry="46"/>
+        <path class="sea" d="M8 30 H92 M8 70 H92"/>
+        <path class="eq-bg" d="M4 50 H96"/>
+        <path class="eq" id="globe-eq" d="M4 50 H96" pathLength="100" stroke-dasharray="0 100"/>
+      </svg>
+      <div class="counter num">
+        <p class="eyebrow" id="counter-label">Distance skated so far</p>
+        <div class="big"><span id="j-km">—</span><small>km</small><span class="of">/ 40,075</span></div>
+        <div class="track" role="img" aria-label="Progress along the equator">
+          <div class="rail"></div>
+          <div class="ticks" aria-hidden="true">
+            <i data-l="0"></i><i data-l="5,000"></i><i data-l="10,000"></i><i data-l="15,000"></i><i data-l="20,000"></i><i data-l="25,000"></i><i data-l="30,000"></i><i data-l="35,000"></i><i data-l="40,075 km"></i>
+          </div>
+          <div class="fill" id="j-fill"></div>
+          <div class="marker" id="j-marker"></div>
+        </div>
+        <div class="foot">
+          <span><b id="j-pct">—</b> of the equator</span>
+          <span><b id="j-left">—</b> km to go</span>
+          <span><b id="j-acts">—</b> activities</span>
+          <span id="j-since"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="record" id="record">
+    <div class="wrap">
+      <div class="chapter"><span class="n">01</span><span class="eyebrow">Singapore Book of Records · 11–12 March 2026</span></div>
+      <div class="top">
+        <div>
+          <div class="figure num">203.79<small>km in 24 h</small></div>
+          <h2>Longest Round Singapore Inline Skating in 24 Hours</h2>
+          <div class="prose">
+            <p>On 11–12 March 2026, Konstantin Lyuik and Dmitry Parfentyev skated 203.79 km in 24 hours and set a new Singapore record, at an average speed of 12.2 km/h.</p>
+            <p>This was not a track attempt. The whole route was skated in a real urban environment across Singapore, on public roads, park connectors and industrial areas as far as Tuas Lamp Post 1, which made the challenge significantly more demanding.</p>
+            <p>The certificate and the Singapore Book of Records were presented by Mr Ong Eng Huat at a ceremony at Merlion Park, in the presence of friends, supporters and members of the skating community. The distance and average speed were monitored with Strava.</p>
+            <p><a href="https://singaporerecords.com/longest-round-singapore-inline-skating-in-24-hours/" target="_blank" rel="noopener">Official record entry at the Singapore Book of Records →</a></p>
+          </div>
+          <div class="timeline num">
+            <div class="t">03:11<span>11 March · start</span></div>
+            <div class="bar"><i>24 hours · 203.79 km</i></div>
+            <div class="t" style="text-align:right">03:07<span>12 March · finish</span></div>
+          </div>
+          <div class="facts num">
+            <div><div class="k">Distance</div><div class="v">203.79 km</div></div>
+            <div><div class="k">Average speed</div><div class="v">12.2 km/h</div></div>
+            <div><div class="k">Skaters</div><div class="v">Konstantin Lyuik (65), Dmitry Parfentyev (50)</div></div>
+            <div><div class="k">Terrain</div><div class="v">Public roads, park connectors, industrial areas</div></div>
+            <div><div class="k">Recognised by</div><div class="v">Singapore Book of Records</div></div>
+            <div><div class="k">Ceremony</div><div class="v">Merlion Park, Singapore</div></div>
+          </div>
+          <p class="thanks">Equipment: professional inline skates from <b>INLINEX</b>. The record attempt was supported by <b>World Caviar House</b>. Thank you to everyone who came to support.</p>
+        </div>
+        <figure class="cert">
+          <img src="assets/record-certificate.jpg" alt="Singapore Book of Records certificate awarded to Konstantin Lyuik and Dmitry Parfentyev for the Longest Round Singapore Inline Skating in 24 Hours, 203.79 km, 11–12 March 2026" loading="lazy">
+          <figcaption>Official certificate, Singapore Book of Records.</figcaption>
+        </figure>
+      </div>
+      <div class="gallery">
+        <figure><img src="assets/record-ceremony.jpg" alt="Certificate presentation at Merlion Park with the Singapore Book of Records banner and the route map of the 203.79 km loop" loading="lazy"><figcaption>Award ceremony at Merlion Park. The route: a full loop around Singapore.</figcaption></figure>
+        <figure><img src="assets/record-poster.jpg" alt="Konstantin Lyuik and Dmitry Parfentyev holding their skates after the record" style="object-position:50% 30%" loading="lazy"><figcaption>The skates that did 203.79 km.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="video">
+    <div class="wrap">
+      <div class="head">
+        <div class="chapter"><span class="n">02</span><span class="eyebrow">Video</span></div>
+        <h2>Training, the record and club skates, in short form.</h2>
+        <p>New clips land first on YouTube Shorts, then on Instagram and TikTok under the same handle.</p>
+      </div>
+      <div class="videos" id="videos"></div>
+      <div class="channels">
+        <a class="ch" href="https://www.youtube.com/@RollerEarth40075/shorts" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></span>
+          <div><b>YouTube Shorts</b><span>@RollerEarth40075</span></div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="ch" href="https://www.instagram.com/rollerearth40075/" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1ZM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0Zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9Z"/></svg></span>
+          <div><b>Instagram</b><span>@rollerearth40075</span></div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="ch" href="https://www.tiktok.com/@rollerearth40075" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.7a5 5 0 0 1-3.8-4.3V2h-3.4v13.7a2.9 2.9 0 1 1-2-2.7V9.5a6.3 6.3 0 1 0 5.4 6.2V8.9a8.4 8.4 0 0 0 4.9 1.6V7a5 5 0 0 1-1.1-.3Z"/></svg></span>
+          <div><b>TikTok</b><span>@rollerearth40075</span></div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="training" id="training">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <div class="chapter"><span class="n">03</span><span class="eyebrow">Training · Strava</span></div>
+          <h2>Every session, synced.</h2>
+          <p>Inline-skating activities from Konstantin's Strava account, refreshed automatically every two hours.</p>
+        </div>
+        <a class="btn" id="link-athlete" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 17.9 13.5 14h-3l4.9 9.9 4.9-9.9h-3zM10.2 0 2.6 14h4.4l3.2-6.2L13.4 14h4.4z"/></svg>
+          Open Strava profile
+        </a>
+      </div>
+      <div class="tiles num">
+        <div class="tile"><p class="eyebrow">Last 4 weeks</p><div class="v" id="t-4w-km">—<small>km</small></div><div class="d" id="t-4w-d"></div></div>
+        <div class="tile"><p class="eyebrow">This year</p><div class="v" id="t-ytd-km">—<small>km</small></div><div class="d" id="t-ytd-d"></div></div>
+        <div class="tile"><p class="eyebrow">Hours this year</p><div class="v" id="t-ytd-h">—<small>h</small></div><div class="d" id="t-ytd-hd"></div></div>
+        <div class="tile"><p class="eyebrow">Last 12 months</p><div class="v" id="t-12m-km">—<small>km</small></div><div class="d" id="t-12m-d"></div></div>
+      </div>
+      <div class="chart">
+        <div class="ch-head"><p class="eyebrow">Weekly distance · last 16 weeks</p><span class="legend num" id="chart-legend"></span></div>
+        <svg id="weekly" viewBox="0 0 960 220" role="img" aria-label="Weekly distance bar chart"></svg>
+      </div>
+      <div class="split">
+        <div class="panel">
+          <p class="eyebrow">Season bests · 12 months</p>
+          <div class="bests num" id="records"></div>
+        </div>
+        <div class="panel">
+          <p class="eyebrow">Recent activities</p>
+          <div class="acts num" id="acts"></div>
+          <p class="note" id="updated"></p>
+        </div>
+      </div>
+      <div class="demo-note" id="demo-note"><strong>Demo data.</strong> The figures in this section are placeholders until the athlete's Strava account is connected (see README). After that the site updates itself every two hours.</div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="chapter"><span class="n">04</span><span class="eyebrow">About the athlete</span></div>
+      <div class="grid">
+        <div>
+          <h2>Konstantin Lyuik</h2>
+          <div class="prose">
+            <p><span class="todo">[To be confirmed] Short biography: where Konstantin is from, when he started skating, what he is training for next.</span></p>
+            <p>Singapore record holder: Longest Round Singapore Inline Skating in 24 Hours, 203.79 km, 11–12 March 2026, together with Dmitry Parfentyev. Recognised by the Singapore Book of Records.</p>
+            <p><span class="todo">[To be confirmed] Other results and events: marathons, national or international competitions, placings and times.</span></p>
+            <p><span class="todo">[To be confirmed] Equipment and coaching: skates, wheels, frame setup, coach or team.</span></p>
+          </div>
+        </div>
+        <div>
+          <figure class="portrait"><img src="assets/record-ceremony.jpg" alt="Konstantin Lyuik with the record certificate at Merlion Park" loading="lazy"></figure>
+          <dl class="kv">
+            <dt>Discipline</dt><dd>Inline skating, long distance</dd>
+            <dt>Record</dt><dd class="num">203.79 km in 24 h · Singapore, 2026</dd>
+            <dt>Club</dt><dd>RollerEarth 40075</dd>
+            <dt>Based in</dt><dd>Singapore</dd>
+            <dt>Born</dt><dd><span class="todo">[To be confirmed]</span></dd>
+            <dt>Strava</dt><dd><a id="link-athlete-2" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">Athlete profile</a></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="club" id="club">
+    <div class="wrap">
+      <div class="chapter"><span class="n">05</span><span class="eyebrow">The club</span></div>
+      <div class="grid">
+        <div>
+          <h2>RollerEarth 40075</h2>
+          <div class="prose">
+            <p>RollerEarth 40075 is an open Strava club for everyone who skates. Anyone can join, from any point on the planet: log your inline-skating sessions, follow the expedition and add your own kilometres to the story. <span class="todo">[To be confirmed: regular group skates in Singapore, day and meeting point]</span></p>
+          </div>
+        </div>
+        <div class="links-col">
+        <img class="poster" src="assets/logo-poster.jpg" alt="Roller Earth 40075 — One life. One planet. One journey." loading="lazy">
+        <div class="links">
+          <a class="btn ink" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">Join the club on Strava</a>
+          <a class="btn" href="https://www.instagram.com/rollerearth40075/" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn" href="https://www.youtube.com/@RollerEarth40075/shorts" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn" href="https://www.tiktok.com/@rollerearth40075" target="_blank" rel="noopener">TikTok</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners" id="partners">
+    <div class="wrap">
+      <div class="chapter"><span class="n">06</span><span class="eyebrow">Partners &amp; sponsors</span></div>
+      <div class="head">
+        <h2>The people and brands behind the kilometres.</h2>
+        <p>The Singapore record and the expedition around the world are made possible by partners who provide equipment, support the attempts and help the project travel.</p>
+      </div>
+      <div class="sponsors">
+        <a class="sp" href="#partners" rel="noopener">
+          <div class="logo"><span class="wordmark">Inline<i>X</i></span></div>
+          <span class="role">Equipment partner</span>
+          <b>INLINEX</b>
+          <p>Professional inline skates for the record attempt and for training. <span class="todo">[To be confirmed: website link and logo file]</span></p>
+          <span class="more">The Premium Lifestyle Outlet</span>
+        </a>
+        <a class="sp" href="https://www.facebook.com/caviar.house.7/" target="_blank" rel="noopener">
+          <div class="logo"><span class="wordmark small">World Caviar House</span></div>
+          <span class="role">Record attempt supporter</span>
+          <b>World Caviar House</b>
+          <p>Supported the 24-hour Singapore record attempt on 11–12 March 2026. <span class="todo">[To be confirmed: logo file]</span></p>
+          <span class="more">Facebook: caviar.house.7 ↗</span>
+        </a>
+        <div class="sp join">
+          <span class="role">Become a partner</span>
+          <b>Join the expedition</b>
+          <p>40,075 km, four years, dozens of countries and a growing audience on Strava, YouTube, Instagram and TikTok. Equipment, logistics, media and financial partnerships are welcome. Write to <b style="font-family:inherit;font-size:inherit;text-transform:none;letter-spacing:0">rollerearth40075@gmail.com</b>. <span class="todo">[To be confirmed: partnership deck]</span></p>
+          <a class="btn orange" href="mailto:rollerearth40075@gmail.com?subject=Roller%20Earth%2040075%20partnership">Get in touch</a>
+        </div>
+      </div>
+      <p class="note">Logos: put image files in <code>assets/sponsors/</code> and replace the text wordmarks in the cards. Partner lists are shown with each partner's permission.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Roller Earth 40075 · Konstantin Lyuik · <a href="mailto:rollerearth40075@gmail.com">rollerearth40075@gmail.com</a></span>
+    <span><a href="https://www.strava.com" target="_blank" rel="noopener">Powered by Strava</a> · <span id="footer-updated"></span></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // ---- Site configuration -------------------------------------------------
+  const SITE = {
+    dataUrl: "data/strava.json",
+    // Length of the equator, the target of the expedition.
+    goalKm: 40075,
+    // YouTube Shorts video IDs to embed (the part after /shorts/). Empty = channel cards only.
+    youtubeShortIds: ["E0bWtOO3bNE", "xSVkjJce2yw", "hsOdcN1z5CI", "ryfQ1ViRUIA", "wIC2xtNmjFk"],
+  };
+
+  const $ = (id) => document.getElementById(id);
+  const km = (m, d = 1) => (m / 1000).toLocaleString("en-GB", { minimumFractionDigits: d, maximumFractionDigits: d });
+  const hours = (s) => (s / 3600).toLocaleString("en-GB", { maximumFractionDigits: 0 });
+  const hms = (s) => { const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60); return h ? `${h}h ${String(m).padStart(2, "0")}m` : `${m} min`; };
+  const dateFmt = (iso) => new Date(iso).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
+  const dateShort = (iso) => new Date(iso).toLocaleDateString("en-GB", { day: "2-digit", month: "short" });
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  function decodePolyline(str) {
+    let index = 0, lat = 0, lng = 0; const pts = [];
+    while (index < str.length) {
+      for (const which of ["lat", "lng"]) {
+        let result = 0, shift = 0, b;
+        do { b = str.charCodeAt(index++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+        const d = (result & 1) ? ~(result >> 1) : (result >> 1);
+        if (which === "lat") lat += d; else lng += d;
+      }
+      pts.push([lat / 1e5, lng / 1e5]);
+    }
+    return pts;
+  }
+
+  function routeSvg(poly, w = 72, h = 48) {
+    const empty = `<svg class="route" viewBox="0 0 ${w} ${h}" aria-hidden="true"></svg>`;
+    if (!poly) return empty;
+    const pts = decodePolyline(poly);
+    if (pts.length < 2) return empty;
+    const lats = pts.map((p) => p[0]), lngs = pts.map((p) => p[1]);
+    const minLat = Math.min(...lats), maxLat = Math.max(...lats), minLng = Math.min(...lngs), maxLng = Math.max(...lngs);
+    const cos = Math.cos(((minLat + maxLat) / 2) * Math.PI / 180);
+    const spanX = (maxLng - minLng) * cos || 1e-6, spanY = (maxLat - minLat) || 1e-6;
+    const pad = 5, scale = Math.min((w - pad * 2) / spanX, (h - pad * 2) / spanY);
+    const ox = (w - spanX * scale) / 2, oy = (h - spanY * scale) / 2;
+    const map = ([la, ln]) => [ox + (ln - minLng) * cos * scale, h - (oy + (la - minLat) * scale)];
+    const d = pts.map((p, i) => (i ? "L" : "M") + map(p).map((v) => v.toFixed(1)).join(" ")).join(" ");
+    const [sx, sy] = map(pts[0]);
+    return `<svg class="route" viewBox="0 0 ${w} ${h}" aria-hidden="true"><path d="${d}"/><circle class="start" cx="${sx.toFixed(1)}" cy="${sy.toFixed(1)}" r="2.6"/></svg>`;
+  }
+
+  function drawWeekly(weeks) {
+    const svg = $("weekly");
+    const W = 960, H = 220, padL = 40, padR = 8, padT = 12, padB = 30;
+    const maxKm = Math.max(10, ...weeks.map((w) => w.distance_m / 1000));
+    const step = maxKm > 150 ? 50 : maxKm > 60 ? 25 : 10;
+    const top = Math.ceil(maxKm / step) * step;
+    const plotW = W - padL - padR, plotH = H - padT - padB;
+    const x = (i) => padL + (i / weeks.length) * plotW;
+    const y = (v) => padT + plotH - (v / top) * plotH;
+    const bw = (plotW / weeks.length) * 0.62;
+    let out = "";
+    for (let v = 0; v <= top; v += step) {
+      out += `<line class="grid" x1="${padL}" x2="${W - padR}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}"/>`;
+      out += `<text x="${padL - 8}" y="${(y(v) + 4).toFixed(1)}" text-anchor="end">${v}</text>`;
+    }
+    weeks.forEach((w, i) => {
+      const v = w.distance_m / 1000, cx = x(i) + (plotW / weeks.length - bw) / 2;
+      const isNow = i === weeks.length - 1;
+      if (v > 0) out += `<rect class="bar${isNow ? " now" : ""}" x="${cx.toFixed(1)}" y="${y(v).toFixed(1)}" width="${bw.toFixed(1)}" height="${(y(0) - y(v)).toFixed(1)}" rx="3"><title>${w.week_start}: ${km(w.distance_m)} km, ${w.count} activities</title></rect>`;
+      else out += `<rect class="zero" x="${cx.toFixed(1)}" y="${(y(0) - 2).toFixed(1)}" width="${bw.toFixed(1)}" height="2"/>`;
+      if (i % 2 === weeks.length % 2) out += `<text x="${(cx + bw / 2).toFixed(1)}" y="${H - 10}" text-anchor="middle">${dateShort(w.week_start)}</text>`;
+    });
+    svg.innerHTML = out;
+    const total = weeks.reduce((s, w) => s + w.distance_m, 0);
+    $("chart-legend").textContent = `${km(total, 0)} km in 16 weeks · avg ${km(total / weeks.length, 0)} km/week`;
+  }
+
+  // The expedition counter. Uses data.journey (distance since the journey start,
+  // written by scripts/fetch-strava.mjs); falls back to this year's total.
+  function renderJourney(data) {
+    const j = data.journey && typeof data.journey.distance_m === "number" ? data.journey : null;
+    const src = j || data.totals.year_to_date;
+    const doneKm = src.distance_m / 1000;
+    const pct = Math.min(100, (doneKm / SITE.goalKm) * 100);
+    $("j-km").textContent = km(src.distance_m, 0);
+    $("j-pct").textContent = pct.toLocaleString("en-GB", { minimumFractionDigits: pct < 10 ? 2 : 1, maximumFractionDigits: pct < 10 ? 2 : 1 }) + "%";
+    $("j-left").textContent = Math.max(0, SITE.goalKm - doneKm).toLocaleString("en-GB", { maximumFractionDigits: 0 });
+    $("j-acts").textContent = (src.count ?? 0).toLocaleString("en-GB");
+    $("j-since").textContent = j && j.start_date
+      ? `Day ${Math.max(1, Math.floor((Date.now() - new Date(j.start_date + "T00:00:00")) / 86400000) + 1)} · counting since ${dateFmt(j.start_date)}`
+      : `Counting this year's skating until the expedition start date is confirmed`;
+    requestAnimationFrame(() => {
+      $("j-fill").style.width = pct + "%";
+      $("j-marker").style.left = pct + "%";
+      $("globe-eq").setAttribute("stroke-dasharray", `${pct.toFixed(2)} 100`);
+    });
+  }
+
+  function render(data) {
+    const t = data.totals;
+    $("demo-note").dataset.show = data.source === "demo" ? "1" : "0";
+    renderJourney(data);
+    $("t-4w-km").innerHTML = `${km(t.last_4_weeks.distance_m, 0)}<small>km</small>`;
+    $("t-4w-d").textContent = `${t.last_4_weeks.count} activities · ${hms(t.last_4_weeks.moving_time_s)}`;
+    $("t-ytd-km").innerHTML = `${km(t.year_to_date.distance_m, 0)}<small>km</small>`;
+    $("t-ytd-d").textContent = `${t.year_to_date.count} activities`;
+    $("t-ytd-h").innerHTML = `${hours(t.year_to_date.moving_time_s)}<small>h</small>`;
+    $("t-ytd-hd").textContent = `${t.year_to_date.elevation_m.toLocaleString("en-GB")} m elevation`;
+    $("t-12m-km").innerHTML = `${km(t.last_12_months.distance_m, 0)}<small>km</small>`;
+    $("t-12m-d").textContent = `${t.last_12_months.count} activities · ${hours(t.last_12_months.moving_time_s)} h`;
+    drawWeekly(data.weekly);
+
+    const r = data.records || {};
+    const best = (label, val, unit, a) => a ? `<div class="best"><div class="l">${label}</div><div class="v">${val}<small>${unit}</small></div><div class="n"><a href="${esc(a.url || "https://www.strava.com/activities/" + a.id)}" target="_blank" rel="noopener">${esc(a.name)}</a> <span>· ${dateFmt(a.date)}</span></div></div>` : "";
+    $("records").innerHTML =
+      best("Longest skate", km(r.longest_distance?.distance_m || 0), "km", r.longest_distance) +
+      best("Fastest average, 10 km+", (r.fastest_avg_speed_10k?.avg_speed_kmh ?? 0).toFixed(1), "km/h", r.fastest_avg_speed_10k) +
+      best("Longest time on skates", hms(r.longest_time?.moving_time_s || 0), "", r.longest_time) +
+      best("Biggest climb", (r.biggest_climb?.elevation_m ?? 0).toLocaleString("en-GB"), "m", r.biggest_climb);
+
+    $("acts").innerHTML = (data.recent || []).slice(0, 8).map((a) => `
+      <a class="act" href="${esc(a.url)}" target="_blank" rel="noopener">
+        ${routeSvg(a.polyline)}
+        <div class="title">${esc(a.name)}<div class="meta">${dateFmt(a.date)}${a.avg_hr ? ` · ${a.avg_hr} bpm` : ""}${a.kudos ? ` · ${a.kudos} kudos` : ""}</div></div>
+        <div class="figs">
+          <div><b>${km(a.distance_m)}</b><span>km</span></div>
+          <div><b>${hms(a.moving_time_s)}</b><span>time</span></div>
+          <div><b>${(a.avg_speed_kmh ?? 0).toFixed(1)}</b><span>km/h</span></div>
+          <div><b>${a.elevation_m}</b><span>m up</span></div>
+        </div>
+      </a>`).join("");
+
+    const upd = new Date(data.generated_at).toLocaleString("en-GB", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
+    $("updated").textContent = `Last synced from Strava: ${upd}`;
+    $("footer-updated").textContent = `updated ${upd}`;
+    if (data.athlete?.url && data.source !== "demo") {
+      for (const id of ["link-athlete", "link-athlete-2", "link-strava", "nav-strava"]) $(id).href = data.athlete.url;
+    }
+
+    if (SITE.youtubeShortIds.length) {
+      $("videos").innerHTML = SITE.youtubeShortIds.map((id) => `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}" title="YouTube video" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>`).join("");
+    }
+  }
+
+  $("year").textContent = new Date().getFullYear();
+  const inline = document.getElementById("strava-data");
+  if (inline) {
+    render(JSON.parse(inline.textContent));
+  } else {
+    fetch(SITE.dataUrl, { cache: "no-cache" }).then((r) => r.json()).then(render).catch(() => {
+      $("updated").textContent = "Strava data is not available right now.";
+      $("j-km").textContent = "—";
+    });
+  }
+})();
+</script>
