@@ -1,0 +1,51 @@
+name: Update Strava data
+
+on:
+  schedule:
+    # Every 2 hours. Strava free API limits are far above this.
+    - cron: "17 */2 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "scripts/fetch-strava.mjs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: strava-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch activities from Strava
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+          # Sport types counted in statistics. Use "ALL" for every activity.
+          STRAVA_SPORT_TYPES: ${{ vars.STRAVA_SPORT_TYPES || 'InlineSkate' }}
+          # Expedition start date for the "X km of 40,075" counter.
+          STRAVA_JOURNEY_START: ${{ vars.STRAVA_JOURNEY_START || '2026-10-06' }}
+        run: node scripts/fetch-strava.mjs
+
+      - name: Commit updated data
+        run: |
+          git config user.name "strava-bot"
+          git config user.email "strava-bot@users.noreply.github.com"
+          git add data/strava.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update Strava data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
