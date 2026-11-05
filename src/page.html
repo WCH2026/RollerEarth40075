@@ -209,6 +209,11 @@ nav a.cta:hover { background: var(--orange); color: #000000; }
 .act .figs b { display: block; font-family: var(--display); font-weight: 600; font-size: 19px; line-height: 1; }
 .act .figs span { display: block; font-size: 11px; color: var(--muted); margin-top: 4px; letter-spacing: .08em; text-transform: uppercase; }
 .note { font-size: 13px; color: var(--muted); margin-top: 16px; }
+.note a, .powered a { color: inherit; text-decoration: none; }
+.note a:hover, .powered a:hover { color: var(--fg); }
+.powered { margin-top: 14px; font-size: 12px; color: var(--muted); letter-spacing: .02em; }
+.act .vos { display: inline-block; margin-top: 4px; font-size: 12px; font-weight: 700; color: #FC5200; }
+.act:hover .vos { text-decoration: underline; }
 .demo-note { display: none; margin-top: 16px; padding: 14px 18px; border-radius: var(--radius); background: #ffe14d; color: #3a2e00; font-size: 14px; }
 .demo-note[data-show="1"] { display: block; }
 
@@ -366,6 +371,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
           <span><b id="j-acts">—</b> activities</span>
           <span id="j-since"></span>
         </div>
+        <p class="powered"><a href="https://www.strava.com" target="_blank" rel="noopener">Powered by Strava</a></p>
       </div>
     </div>
   </section>
@@ -563,7 +569,6 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
 <footer>
   <div class="wrap">
     <span>© <span id="year"></span> Roller Earth 40075 · Konstantin Lyuik · <a href="mailto:rollerearth40075@gmail.com">rollerearth40075@gmail.com</a></span>
-    <span><a href="https://www.strava.com" target="_blank" rel="noopener">Powered by Strava</a> · <span id="footer-updated"></span></span>
   </div>
 </footer>
 
@@ -692,7 +697,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     $("acts").innerHTML = (data.recent || []).slice(0, 8).map((a) => `
       <a class="act" href="${esc(a.url)}" target="_blank" rel="noopener">
         ${routeSvg(a.polyline)}
-        <div class="title">${esc(a.name)}<div class="meta">${dateFmt(a.date)}${a.avg_hr ? ` · ${a.avg_hr} bpm` : ""}${a.kudos ? ` · ${a.kudos} kudos` : ""}</div></div>
+        <div class="title">${esc(a.name)}<div class="meta">${dateFmt(a.date)}${a.avg_hr ? ` · ${a.avg_hr} bpm` : ""}${a.kudos ? ` · ${a.kudos} kudos` : ""}</div><span class="vos">View on Strava</span></div>
         <div class="figs">
           <div><b>${km(a.distance_m)}</b><span>km</span></div>
           <div><b>${hms(a.moving_time_s)}</b><span>time</span></div>
@@ -702,8 +707,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
       </a>`).join("");
 
     const upd = new Date(data.generated_at).toLocaleString("en-GB", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
-    $("updated").textContent = `Last synced from Strava: ${upd}`;
-    $("footer-updated").textContent = `updated ${upd}`;
+    $("updated").innerHTML = `Last synced: ${upd} · <a href="https://www.strava.com" target="_blank" rel="noopener">Powered by Strava</a>`;
     if (data.athlete?.url && data.source !== "demo") {
       for (const id of ["link-athlete", "link-athlete-2", "link-strava", "nav-strava"]) $(id).href = data.athlete.url;
     }
