@@ -225,6 +225,13 @@ nav a.cta:hover { background: var(--orange); color: #000000; }
 .kv dt { font-family: var(--display); font-size: 12px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); align-self: center; }
 .kv dd { font-weight: 500; }
 .kv dd a { color: var(--orange); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.fest-tag { margin-top: 28px; font-family: var(--display); font-size: clamp(22px, 2.6vw, 32px); font-weight: 600; text-transform: uppercase; letter-spacing: .02em; line-height: 1.15; color: var(--orange); }
+.fest-poster { margin: 0; }
+.fest-poster img { width: 100%; max-width: 440px; margin-left: auto; aspect-ratio: 9 / 16; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); }
+.fest-video:empty { display: none; }
+.fest-video { margin-bottom: 18px; }
+.fest-video iframe { display: block; width: 100%; max-width: 440px; margin-left: auto; aspect-ratio: 9 / 16; border: 0; border-radius: var(--radius); background: #000; }
+@media (max-width: 960px) { .fest-poster img, .fest-video iframe { margin: 0 auto; } }
 .portrait { margin: 0 0 24px; }
 .portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 12% 62%; border-radius: var(--radius); border: 1px solid var(--line); filter: saturate(.9); }
 
@@ -318,7 +325,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
       <a href="#record">Record</a>
       <a href="#video">Video</a>
       <a href="#training">Training</a>
-      <a href="#about">About</a>
+      <a href="#festival">Festival</a>
       <a href="#club">Club</a>
       <a href="#partners">Partners</a>
       <a class="cta" id="nav-strava" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">Strava</a>
@@ -482,28 +489,31 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     </div>
   </section>
 
-  <section class="about" id="about">
+  <section class="about festival" id="festival">
     <div class="wrap">
-      <div class="chapter"><span class="n">04</span><span class="eyebrow">About the athlete</span></div>
+      <div class="chapter"><span class="n">04</span><span class="eyebrow">Festival · 15 February 2026</span></div>
       <div class="grid">
         <div>
-          <h2>Konstantin Lyuik</h2>
+          <h2>The Roller Skills Festival 2026</h2>
           <div class="prose">
-            <p>Konstantin took up inline skating seriously at around 60. Before that he skated only now and then, and never over long distances. A few years later, at 65, he skated 203.79 km in 24 hours and set a Singapore record. Now he is skating the length of the equator.</p>
-            <p>Singapore record holder: Longest Round Singapore Inline Skating in 24 Hours, 203.79 km, 11–12 March 2026, together with Dmitry Parfentyev. Recognised by the Singapore Book of Records.</p>
-            <p><span class="todo">[To be confirmed] Other results and events: marathons, national or international competitions, placings and times.</span></p>
-            <p><span class="todo">[To be confirmed] Equipment and coaching: skates, wheels, frame setup, coach or team.</span></p>
+            <p>The Roller Skills Festival 2026 brought together over 100 roller skaters from approximately 10 skating clubs for a celebration of skating, friendship, and community spirit.</p>
+            <p>Konstantin Lyuik, founder of ROLLER EARTH 40 075, was one of the organizers of the festival, supporting the development of Singapore's roller skating community and promoting an active, inclusive lifestyle.</p>
+            <p>The event was completely free and open to skaters of all ages and skill levels. With no registration or competition, participants enjoyed a friendly atmosphere, skating activities, and plenty of sweet prizes generously provided by KOSKA.</p>
+            <p>The festival demonstrated how a shared passion for roller skating can bring people and clubs together.</p>
           </div>
+          <p class="fest-tag">Over 100 skaters. Around 10 clubs. One skating community!</p>
+          <dl class="kv" style="margin-top:32px">
+            <dt>Date</dt><dd>15 February 2026</dd>
+            <dt>Venue</dt><dd>Singapore Sports Stadium</dd>
+            <dt>Skaters</dt><dd class="num">Over 100</dd>
+            <dt>Clubs</dt><dd>Around 10</dd>
+            <dt>Entry</dt><dd>Free, all ages and skill levels</dd>
+            <dt>Prizes</dt><dd>KOSKA</dd>
+          </dl>
         </div>
         <div>
-          <figure class="portrait"><img src="assets/record-ceremony.jpg" alt="Konstantin Lyuik with the record certificate at Merlion Park" loading="lazy"></figure>
-          <dl class="kv">
-            <dt>Discipline</dt><dd>Inline skating, long distance</dd>
-            <dt>Record</dt><dd class="num">203.79 km in 24 h · Singapore, 2026</dd>
-            <dt>Club</dt><dd>RollerEarth 40075</dd>
-            <dt>Based in</dt><dd>Singapore</dd>
-            <dt>Strava</dt><dd><a id="link-athlete-2" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">Athlete profile</a></dd>
-          </dl>
+          <div class="fest-video" id="fest-video"></div>
+          <figure class="fest-poster"><img src="assets/festival-2026.jpg" alt="The Roller Skills Festival, 15 February 2026: group photo of the skaters at Singapore Sports Stadium with participating club and sponsor logos" loading="lazy"></figure>
         </div>
       </div>
     </div>
@@ -580,6 +590,8 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     // Length of the equator, the target of the expedition.
     goalKm: 40075,
     // YouTube Shorts video IDs to embed (the part after /shorts/). Empty = channel cards only.
+    // YouTube ID of the festival video (from youtube.com/shorts/ID or watch?v=ID). Empty = poster only.
+    festivalVideoId: "",
     youtubeShortIds: ["E0bWtOO3bNE", "xSVkjJce2yw", "hsOdcN1z5CI", "ryfQ1ViRUIA", "wIC2xtNmjFk"],
   };
 
@@ -709,7 +721,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     const upd = new Date(data.generated_at).toLocaleString("en-GB", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
     $("updated").innerHTML = `Last synced: ${upd} · <a href="https://www.strava.com" target="_blank" rel="noopener">Powered by Strava</a>`;
     if (data.athlete?.url && data.source !== "demo") {
-      for (const id of ["link-athlete", "link-athlete-2", "link-strava", "nav-strava"]) $(id).href = data.athlete.url;
+      for (const id of ["link-athlete", "link-strava", "nav-strava"]) $(id).href = data.athlete.url;
     }
 
     if (SITE.youtubeShortIds.length) {
@@ -717,6 +729,9 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     }
   }
 
+  if (SITE.festivalVideoId) {
+    $("fest-video").innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(SITE.festivalVideoId)}" title="The Roller Skills Festival 2026" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+  }
   $("year").textContent = new Date().getFullYear();
   const inline = document.getElementById("strava-data");
   if (inline) {
