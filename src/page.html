@@ -232,6 +232,8 @@ nav a.cta:hover { background: var(--orange); color: #000000; }
 .fest-video { margin-bottom: 18px; }
 .fest-video .instagram-media, .fest-video iframe.instagram-media { max-width: 440px !important; min-width: 280px !important; width: 100% !important; margin: 0 0 0 auto !important; border-radius: var(--radius) !important; }
 @media (max-width: 960px) { .fest-video .instagram-media, .fest-video iframe.instagram-media { margin: 0 auto !important; } }
+/* Keep the reel visible even if Instagram never sends its resize message. */
+.fest-video iframe.instagram-media { min-height: 680px; }
 .fest-video:not(:empty) + .fest-poster { display: none; }
 .fest-video iframe { display: block; width: 100%; max-width: 440px; margin-left: auto; aspect-ratio: 9 / 16; border: 0; border-radius: var(--radius); background: #000; }
 @media (max-width: 960px) { .fest-poster img, .fest-video iframe { margin: 0 auto; } }
