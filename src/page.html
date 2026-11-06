@@ -230,6 +230,9 @@ nav a.cta:hover { background: var(--orange); color: #000000; }
 .fest-poster img { width: 100%; max-width: 440px; margin-left: auto; aspect-ratio: 9 / 16; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); }
 .fest-video:empty { display: none; }
 .fest-video { margin-bottom: 18px; }
+.fest-video .instagram-media, .fest-video iframe.instagram-media { max-width: 440px !important; min-width: 280px !important; width: 100% !important; margin: 0 0 0 auto !important; border-radius: var(--radius) !important; }
+@media (max-width: 960px) { .fest-video .instagram-media, .fest-video iframe.instagram-media { margin: 0 auto !important; } }
+.fest-video:not(:empty) + .fest-poster { display: none; }
 .fest-video iframe { display: block; width: 100%; max-width: 440px; margin-left: auto; aspect-ratio: 9 / 16; border: 0; border-radius: var(--radius); background: #000; }
 @media (max-width: 960px) { .fest-poster img, .fest-video iframe { margin: 0 auto; } }
 .portrait { margin: 0 0 24px; }
@@ -592,6 +595,8 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     // YouTube Shorts video IDs to embed (the part after /shorts/). Empty = channel cards only.
     // YouTube ID of the festival video (from youtube.com/shorts/ID or watch?v=ID). Empty = poster only.
     festivalVideoId: "",
+    // Instagram reel code of the festival video (from instagram.com/reel/CODE/). Used when festivalVideoId is empty.
+    festivalInstagramReel: "DU18iOtkveT",
     youtubeShortIds: ["E0bWtOO3bNE", "xSVkjJce2yw", "hsOdcN1z5CI", "ryfQ1ViRUIA", "wIC2xtNmjFk"],
   };
 
@@ -731,6 +736,13 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
 
   if (SITE.festivalVideoId) {
     $("fest-video").innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(SITE.festivalVideoId)}" title="The Roller Skills Festival 2026" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+  } else if (SITE.festivalInstagramReel) {
+    // Official Instagram embed: a blockquote that embed.js turns into a sized iframe.
+    const link = `https://www.instagram.com/reel/${encodeURIComponent(SITE.festivalInstagramReel)}/`;
+    $("fest-video").innerHTML = `<blockquote class="instagram-media" data-instgrm-permalink="${link}" data-instgrm-version="14"><a href="${link}" target="_blank" rel="noopener">Watch the festival video on Instagram</a></blockquote>`;
+    const sc = document.createElement("script");
+    sc.async = true; sc.src = "https://www.instagram.com/embed.js";
+    document.body.appendChild(sc);
   }
   $("year").textContent = new Date().getFullYear();
   const inline = document.getElementById("strava-data");
