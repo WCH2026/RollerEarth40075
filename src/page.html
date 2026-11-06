@@ -155,6 +155,10 @@ nav a.cta:hover { background: var(--orange); color: #000000; }
 .videos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 24px; }
 .videos:empty { display: none; }
 .videos iframe { width: 100%; aspect-ratio: 9 / 16; border: 0; border-radius: var(--radius); background: #000; }
+.videos-nav { display: none; }
+.videos-nav button { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--surface); color: var(--fg); font: 600 22px/1 var(--display); cursor: pointer; transition: border-color .15s ease, color .15s ease, opacity .15s ease; }
+.videos-nav button:hover:not(:disabled) { border-color: var(--orange); color: var(--orange); }
+.videos-nav button:disabled { opacity: .3; cursor: default; }
 .channels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .ch { display: flex; align-items: center; gap: 16px; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color .15s ease, background .15s ease; }
 .ch:hover { border-color: var(--orange); background: var(--surface-2); }
@@ -284,7 +288,13 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
 .partners .note { font-size: 13px; color: var(--muted); margin-top: 18px; }
 
 @media (max-width: 960px) {
-  .videos { grid-template-columns: repeat(3, 1fr); }
+  /* Swipe strip: one row like on desktop, next video peeks in from the right. */
+  .videos { display: flex; gap: 12px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-left: var(--gl); padding: 0 0 4px var(--gl); margin-left: calc(-1 * var(--gl)); margin-right: calc(-1 * var(--gr)); scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .videos::-webkit-scrollbar { display: none; }
+  .videos::after { content: ""; flex: 0 0 calc(var(--gr) - 12px); }
+  .videos iframe { flex: 0 0 auto; min-width: 0; width: calc((100% - var(--gl) - 36px) / 3.4); scroll-snap-align: start; }
+  .videos-nav { display: flex; justify-content: flex-end; gap: 8px; margin: 4px 0 24px; }
+  .videos:empty + .videos-nav { display: none; }
   .brand small { display: none; }
   .record .top, .about .grid, .club .grid { grid-template-columns: 1fr; }
   .sponsors { grid-template-columns: 1fr; }
@@ -295,7 +305,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
   .hero .tag { top: 76px; }
 }
 @media (max-width: 600px) {
-  .videos { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .videos iframe { width: calc((100% - var(--gl)) * .7); }
   .brand { font-size: 15px; gap: 8px; }
   .brand .mark { width: 30px; height: 30px; }
   nav { justify-content: flex-start; }
@@ -436,6 +446,10 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
         <p>New clips land first on YouTube Shorts, then on Instagram and TikTok under the same handle.</p>
       </div>
       <div class="videos" id="videos"></div>
+      <div class="videos-nav" aria-label="Scroll the videos">
+        <button type="button" id="videos-prev" aria-label="Previous video">‹</button>
+        <button type="button" id="videos-next" aria-label="Next video">›</button>
+      </div>
       <div class="channels">
         <a class="ch" href="https://www.youtube.com/@RollerEarth40075/shorts" target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></span>
@@ -732,6 +746,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
 
     if (SITE.youtubeShortIds.length) {
       $("videos").innerHTML = SITE.youtubeShortIds.map((id) => `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}" title="YouTube video" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>`).join("");
+      setupVideoStrip();
     }
   }
 
@@ -745,6 +760,22 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     sc.async = true; sc.src = "https://www.instagram.com/embed.js";
     document.body.appendChild(sc);
   }
+  // Phone/tablet swipe strip for the Shorts: arrow buttons move one video at a time.
+  function setupVideoStrip() {
+    const strip = $("videos"), prev = $("videos-prev"), next = $("videos-next");
+    const smooth = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+    const step = () => { const f = strip.querySelector("iframe"); return f ? f.getBoundingClientRect().width + 12 : strip.clientWidth * 0.7; };
+    const update = () => {
+      prev.disabled = strip.scrollLeft <= 2;
+      next.disabled = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 2;
+    };
+    prev.onclick = () => strip.scrollBy({ left: -step(), behavior: smooth });
+    next.onclick = () => strip.scrollBy({ left: step(), behavior: smooth });
+    strip.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  }
+
   $("year").textContent = new Date().getFullYear();
   const inline = document.getElementById("strava-data");
   if (inline) {
