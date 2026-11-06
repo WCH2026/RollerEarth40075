@@ -274,8 +274,8 @@ footer a:hover { color: var(--orange); }
 .sponsors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .sp { display: flex; flex-direction: column; gap: 16px; padding: 26px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: inherit; transition: border-color .15s ease, background .15s ease; }
 a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
-.sp .logo { height: 72px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--line-strong); border-radius: 6px; background: #000; padding: 10px 16px; }
-.sp .logo img { max-height: 52px; max-width: 100%; object-fit: contain; }
+.sp .logo { height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 6px; background: #fff; padding: 14px 20px; }
+.sp .logo img { max-height: 92px; max-width: 100%; object-fit: contain; }
 .sp .logo .wordmark { font-family: var(--display); font-weight: 700; font-size: 30px; letter-spacing: .04em; text-transform: uppercase; color: var(--fg); line-height: 1; }
 .sp .logo .wordmark i { font-style: normal; color: var(--orange); }
 .sp .logo .wordmark.small { font-size: 20px; letter-spacing: .12em; text-align: center; }
@@ -559,19 +559,19 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
         <p>The Singapore record and the expedition around the world are made possible by partners who provide equipment, support the attempts and help the project travel.</p>
       </div>
       <div class="sponsors">
-        <a class="sp" href="#partners" rel="noopener">
-          <div class="logo"><span class="wordmark">Inline<i>X</i></span></div>
+        <a class="sp" href="https://inlinexskate.com/" target="_blank" rel="noopener">
+          <div class="logo"><img src="assets/sponsors/inlinex.webp" alt="INLINEX — The Premium Lifestyle Outlet" loading="lazy"></div>
           <span class="role">Equipment partner</span>
           <b>INLINEX</b>
-          <p>Professional inline skates for the record attempt and for training. <span class="todo">[To be confirmed: website link and logo file]</span></p>
-          <span class="more">The Premium Lifestyle Outlet</span>
+          <p>Professional inline skates for the record attempt and for training.</p>
+          <span class="more">inlinexskate.com ↗</span>
         </a>
-        <a class="sp" href="https://www.facebook.com/caviar.house.7/" target="_blank" rel="noopener">
-          <div class="logo"><span class="wordmark small">World Caviar House</span></div>
+        <a class="sp" href="https://caviarpop.com/" target="_blank" rel="noopener">
+          <div class="logo"><img src="assets/sponsors/world-caviar-house.png" alt="World Caviar House Singapore" loading="lazy"></div>
           <span class="role">Record attempt supporter</span>
           <b>World Caviar House</b>
-          <p>Supported the 24-hour Singapore record attempt on 11–12 March 2026. <span class="todo">[To be confirmed: logo file]</span></p>
-          <span class="more">Facebook: caviar.house.7 ↗</span>
+          <p>Supported the 24-hour Singapore record attempt on 11–12 March 2026.</p>
+          <span class="more">caviarpop.com ↗</span>
         </a>
         <div class="sp join">
           <span class="role">Become a partner</span>
@@ -580,7 +580,6 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
           <a class="btn orange" href="mailto:rollerearth40075@gmail.com?subject=Roller%20Earth%2040075%20partnership">Get in touch</a>
         </div>
       </div>
-      <p class="note">Logos: put image files in <code>assets/sponsors/</code> and replace the text wordmarks in the cards. Partner lists are shown with each partner's permission.</p>
     </div>
   </section>
 </main>
