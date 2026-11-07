@@ -271,6 +271,17 @@ footer a:hover { color: var(--orange); }
 /* ---- Partners ---------------------------------------------------- */
 .partners { background: var(--bg); border-top: 1px solid var(--line); }
 .partners .head { margin-top: 26px; }
+.kit { background: var(--bg); border-top: 1px solid var(--line); }
+.kit .head { margin-top: 26px; max-width: 760px; }
+.kit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.kit-card { margin: 0; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.kit-img { background: #f6f6f6; height: clamp(300px, 34vw, 460px); display: flex; align-items: center; justify-content: center; padding: 24px; }
+.kit-img img { max-height: 100%; max-width: 100%; object-fit: contain; }
+.kit-card figcaption { padding: 22px 26px 26px; display: grid; gap: 8px; }
+.kit-card .role { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
+.kit-card b { font-family: var(--display); font-weight: 500; font-size: 24px; text-transform: uppercase; letter-spacing: .04em; }
+.kit-card p { font-size: 15px; color: var(--fg-2); line-height: 1.55; margin: 0; }
+@media (max-width: 700px) { .kit-grid { grid-template-columns: 1fr; } }
 .sponsors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .sp { display: flex; flex-direction: column; gap: 16px; padding: 26px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: inherit; transition: border-color .15s ease, background .15s ease; }
 a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
@@ -340,6 +351,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
       <a href="#record">Record</a>
       <a href="#video">Video</a>
       <a href="#training">Training</a>
+      <a href="#kit">Kit</a>
       <a href="#festival">Festival</a>
       <a href="#club">Club</a>
       <a href="#partners">Partners</a>
@@ -508,9 +520,37 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     </div>
   </section>
 
+  <section class="kit" id="kit">
+    <div class="wrap">
+      <div class="chapter"><span class="n">04</span><span class="eyebrow">The kit</span></div>
+      <div class="head">
+        <h2>On his feet, every kilometre.</h2>
+        <p>Three big 125 mm wheels per skate: fewer pushes, more speed, smoother over rough roads. This is what carries Konstantin towards 40,075 km.</p>
+      </div>
+      <div class="kit-grid">
+        <figure class="kit-card">
+          <div class="kit-img"><img src="assets/kit/next-white.jpg" alt="White Powerslide NEXT inline skates with three 125 mm wheels" loading="lazy"></div>
+          <figcaption>
+            <span class="role">Everyday training</span>
+            <b>Powerslide NEXT 3×125 mm</b>
+            <p>White. Konstantin's own skates for daily training.</p>
+          </figcaption>
+        </figure>
+        <figure class="kit-card">
+          <div class="kit-img"><img src="assets/kit/next-black.jpg" alt="Black marble Powerslide NEXT inline skates with three 125 mm wheels" loading="lazy"></div>
+          <figcaption>
+            <span class="role">Second pair</span>
+            <b>Powerslide NEXT 3×125 mm</b>
+            <p>Black marble. MyFit liner, Trinity mount, 125 mm wheels.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <section class="about festival" id="festival">
     <div class="wrap">
-      <div class="chapter"><span class="n">04</span><span class="eyebrow">Festival · 15 February 2026</span></div>
+      <div class="chapter"><span class="n">05</span><span class="eyebrow">Festival · 15 February 2026</span></div>
       <div class="grid">
         <div>
           <h2>The Roller Skills Festival 2026</h2>
@@ -540,7 +580,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
 
   <section class="club" id="club">
     <div class="wrap">
-      <div class="chapter"><span class="n">05</span><span class="eyebrow">The club</span></div>
+      <div class="chapter"><span class="n">06</span><span class="eyebrow">The club</span></div>
       <div class="grid">
         <div>
           <h2>Skate anywhere.<br><em>Every km counts.</em></h2>
@@ -568,7 +608,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
 
   <section class="partners" id="partners">
     <div class="wrap">
-      <div class="chapter"><span class="n">06</span><span class="eyebrow">Partners &amp; sponsors</span></div>
+      <div class="chapter"><span class="n">07</span><span class="eyebrow">Partners &amp; sponsors</span></div>
       <div class="head">
         <h2>The people and brands behind the kilometres.</h2>
         <p>The Singapore record and the expedition around the world are made possible by partners who provide equipment, support the attempts and help the project travel.</p>
