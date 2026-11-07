@@ -276,6 +276,11 @@ footer a:hover { color: var(--orange); }
 .kit-card figcaption { padding: 22px 26px 26px; display: grid; gap: 8px; }
 .kit-card .role { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
 .kit-card b { font-family: var(--display); font-weight: 500; font-size: 24px; text-transform: uppercase; letter-spacing: .04em; }
+.kit-parts { list-style: none; margin: 10px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); display: grid; gap: 10px; }
+.kit-parts li { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; }
+.kit-parts img { width: 56px; height: 56px; object-fit: contain; background: #fff; border-radius: 6px; padding: 4px; }
+.kit-parts span { font-size: 15px; line-height: 1.35; color: var(--fg); }
+.kit-parts em { display: block; font-style: normal; font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
 .kit-card p { font-size: 15px; color: var(--fg-2); line-height: 1.55; margin: 0; }
 @media (max-width: 700px) { .kit-grid { grid-template-columns: 1fr; } }
 .sponsors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
@@ -529,15 +534,25 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
           <figcaption>
             <span class="role">Everyday training</span>
             <b>Powerslide NEXT 3×125 mm</b>
-            <p>White. Konstantin's own skates for daily training.</p>
+            <p>White, with cream wheels. Konstantin's own skates for daily training.</p>
+            <ul class="kit-parts">
+              <li><img src="assets/kit/frame-trinity.jpg" alt="" loading="lazy"><span><em>Frame</em>Powerslide Elite Casted MG 3×125 Trinity</span></li>
+              <li><img src="assets/kit/wheel-undercover.jpg" alt="" loading="lazy"><span><em>Wheels</em>Undercover Team Blank 125 mm, 88A</span></li>
+              <li><img src="assets/kit/bearing-ceramic.jpg" alt="" loading="lazy"><span><em>Bearings</em>Wicked Ceramic</span></li>
+            </ul>
           </figcaption>
         </figure>
         <figure class="kit-card">
           <div class="kit-img"><img src="assets/kit/next-black.jpg" alt="Black marble Powerslide NEXT inline skates with three 125 mm wheels" loading="lazy"></div>
           <figcaption>
-            <span class="role">Second pair</span>
+            <span class="role">Rain setup</span>
             <b>Powerslide NEXT 3×125 mm</b>
-            <p>Black marble. MyFit liner, Trinity mount, 125 mm wheels.</p>
+            <p>Black marble. Rain wheels and rustproof bearings for wet roads.</p>
+            <ul class="kit-parts">
+              <li><img src="assets/kit/frame-trinity.jpg" alt="" loading="lazy"><span><em>Frame</em>Powerslide Elite Casted MG 3×125 Trinity</span></li>
+              <li><img src="assets/kit/wheel-torrent.jpg" alt="" loading="lazy"><span><em>Wheels</em>Powerslide Torrent rain wheels, 80A</span></li>
+              <li><img src="assets/kit/bearing-rustproof.jpg" alt="" loading="lazy"><span><em>Bearings</em>Wicked SUS Rustproof</span></li>
+            </ul>
           </figcaption>
         </figure>
       </div>
