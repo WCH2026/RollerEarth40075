@@ -257,13 +257,8 @@ nav a.cta:hover { background: var(--orange); color: #000000; }
 .club .club-steps li { border: 1px solid var(--line-strong); border-radius: 8px; padding: 16px 18px; display: grid; gap: 8px; align-content: start; background: var(--bg); }
 .club .club-steps b { font-family: var(--display); font-weight: 600; font-size: 34px; line-height: 1; color: var(--orange); }
 .club .club-steps span { font-size: 15px; line-height: 1.45; color: rgba(255, 255, 255, .82); }
+.club .poster { display: block; width: min(100%, 400px); margin-left: auto; border-radius: 10px; background: #fff; }
 .club .links { display: flex; flex-wrap: wrap; gap: 10px; }
-.phone { position: relative; width: 326px; box-sizing: border-box; max-width: 100%; margin: 0 auto; padding: 46px 12px 30px; background: #1b1b1d; border: 1px solid #2c2c2f; border-radius: 46px; box-shadow: 0 30px 80px rgba(0, 0, 0, .6), inset 0 0 0 2px #0a0a0a; }
-.phone::before { content: ""; position: absolute; top: 16px; left: 50%; width: 92px; height: 22px; transform: translateX(-50%); background: #000; border-radius: 12px; }
-.phone::after { content: ""; position: absolute; bottom: 11px; left: 50%; width: 110px; height: 4px; transform: translateX(-50%); background: #3a3a3d; border-radius: 2px; }
-.phone .screen { border-radius: 18px; overflow: hidden; background: #fff; }
-.phone iframe { display: block; width: 300px; max-width: 100%; height: 454px; border: 0; }
-.phone-caption { margin: 14px 0 0; text-align: center; font-size: 13px; color: var(--muted); }
 @media (max-width: 600px) { .club .club-steps { grid-template-columns: 1fr; } .club .club-steps li { grid-template-columns: 44px 1fr; align-items: baseline; } }
 
 /* ---- Footer ------------------------------------------------------ */
@@ -565,12 +560,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
           </div>
         </div>
         <div>
-          <div class="phone">
-            <div class="screen">
-              <iframe title="RollerEarth 40075 club on Strava: latest activities" height="454" width="300" scrolling="no" loading="lazy" src="https://www.strava.com/clubs/2372055/latest-rides/c28857563e952f23165e730e1cec580777e29ee2?show_rides=true"></iframe>
-            </div>
-          </div>
-          <p class="phone-caption">Latest skates from the club, live from Strava</p>
+          <img class="poster" src="assets/logo-poster.jpg" alt="Roller Earth 40075 — One life. One planet. One journey." loading="lazy">
         </div>
       </div>
     </div>
