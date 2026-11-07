@@ -249,31 +249,22 @@ nav a.cta:hover { background: var(--orange); color: #000000; }
 .portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 12% 62%; border-radius: var(--radius); border: 1px solid var(--line); filter: saturate(.9); }
 
 /* ---- Club -------------------------------------------------------- */
-.club { background: var(--orange); color: #000000; }
-.club .grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
-.club .chapter .n { color: #000000; border-color: #000000; }
-.club .chapter::after { background: rgba(11, 12, 15, .25); }
-.club .eyebrow { color: rgba(11, 12, 15, .65); }
+.club { background: var(--surface); border-top: 1px solid var(--line); }
+.club .grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
 .club h2 { margin: 18px 0 20px; font-size: clamp(44px, 5.6vw, 80px); }
-.club .prose { color: rgba(11, 12, 15, .85); }
-.club .todo { background: rgba(11, 12, 15, .9); color: #ffe14d; }
+.club h2 em { font-style: normal; color: var(--orange); }
 .club .club-steps { list-style: none; margin: 28px 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-.club .club-steps li { border: 1.5px solid #000000; border-radius: 8px; padding: 16px 18px; display: grid; gap: 8px; align-content: start; }
-.club .club-steps b { font-family: var(--display); font-weight: 600; font-size: 34px; line-height: 1; }
-.club .club-steps span { font-size: 15px; line-height: 1.45; color: rgba(11, 12, 15, .85); }
-.club button.btn { cursor: pointer; }
-.club .caret { display: inline-block; transition: transform .2s ease; }
-.club #club-toggle[aria-expanded="true"] .caret { transform: rotate(180deg); }
-.club .club-widget { margin-top: 20px; }
-.club .club-widget iframe { display: block; width: 300px; max-width: 100%; height: 454px; border: 0; border-radius: 10px; background: #fff; }
-@media (max-width: 600px) { .club .club-steps { grid-template-columns: 1fr; } .club .club-steps li { grid-template-columns: 44px 1fr; align-items: baseline; } }
-.club .links-col { display: grid; gap: 22px; justify-items: start; }
-.club .poster { width: min(100%, 380px); border-radius: 10px; background: #fff; }
+.club .club-steps li { border: 1px solid var(--line-strong); border-radius: 8px; padding: 16px 18px; display: grid; gap: 8px; align-content: start; background: var(--bg); }
+.club .club-steps b { font-family: var(--display); font-weight: 600; font-size: 34px; line-height: 1; color: var(--orange); }
+.club .club-steps span { font-size: 15px; line-height: 1.45; color: rgba(255, 255, 255, .82); }
 .club .links { display: flex; flex-wrap: wrap; gap: 10px; }
-.club .btn { border-color: #000000; color: #000000; }
-.club .btn:hover { background: rgba(11, 12, 15, .08); }
-.club .btn.ink { background: #000000; color: var(--orange); }
-.club .btn.ink:hover { background: #1c1f26; }
+.phone { position: relative; width: 326px; box-sizing: border-box; max-width: 100%; margin: 0 auto; padding: 46px 12px 30px; background: #1b1b1d; border: 1px solid #2c2c2f; border-radius: 46px; box-shadow: 0 30px 80px rgba(0, 0, 0, .6), inset 0 0 0 2px #0a0a0a; }
+.phone::before { content: ""; position: absolute; top: 16px; left: 50%; width: 92px; height: 22px; transform: translateX(-50%); background: #000; border-radius: 12px; }
+.phone::after { content: ""; position: absolute; bottom: 11px; left: 50%; width: 110px; height: 4px; transform: translateX(-50%); background: #3a3a3d; border-radius: 2px; }
+.phone .screen { border-radius: 18px; overflow: hidden; background: #fff; }
+.phone iframe { display: block; width: 300px; max-width: 100%; height: 454px; border: 0; }
+.phone-caption { margin: 14px 0 0; text-align: center; font-size: 13px; color: var(--muted); }
+@media (max-width: 600px) { .club .club-steps { grid-template-columns: 1fr; } .club .club-steps li { grid-template-columns: 44px 1fr; align-items: baseline; } }
 
 /* ---- Footer ------------------------------------------------------ */
 footer { padding: 34px 0; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
@@ -557,7 +548,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
       <div class="chapter"><span class="n">05</span><span class="eyebrow">The club</span></div>
       <div class="grid">
         <div>
-          <h2>Skate anywhere.<br>Every km counts.</h2>
+          <h2>Skate anywhere.<br><em>Every km counts.</em></h2>
           <div class="prose">
             <p>RollerEarth 40075 is an open Strava club for inline skaters. Members skate wherever they are, anywhere on the planet. Where you skate does not matter, only the kilometres do.</p>
           </div>
@@ -567,18 +558,19 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
             <li><b>03</b><span>Log every inline skate. Your kilometres go on the club leaderboard</span></li>
           </ol>
           <div class="links">
-            <a class="btn ink" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">Join the club on Strava</a>
-            <button class="btn" type="button" id="club-toggle" aria-expanded="false" aria-controls="club-widget">See latest club activity <span class="caret" aria-hidden="true">▾</span></button>
+            <a class="btn orange" href="https://www.strava.com/clubs/rollerearth40075" target="_blank" rel="noopener">Join the club on Strava</a>
+            <a class="btn" href="https://www.instagram.com/rollerearth40075/" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn" href="https://www.youtube.com/@RollerEarth40075/shorts" target="_blank" rel="noopener">YouTube</a>
+            <a class="btn" href="https://www.tiktok.com/@rollerearth40075" target="_blank" rel="noopener">TikTok</a>
           </div>
-          <div class="club-widget" id="club-widget" hidden></div>
         </div>
-        <div class="links-col">
-        <img class="poster" src="assets/logo-poster.jpg" alt="Roller Earth 40075 — One life. One planet. One journey." loading="lazy">
-        <div class="links">
-          <a class="btn" href="https://www.instagram.com/rollerearth40075/" target="_blank" rel="noopener">Instagram</a>
-          <a class="btn" href="https://www.youtube.com/@RollerEarth40075/shorts" target="_blank" rel="noopener">YouTube</a>
-          <a class="btn" href="https://www.tiktok.com/@rollerearth40075" target="_blank" rel="noopener">TikTok</a>
-        </div>
+        <div>
+          <div class="phone">
+            <div class="screen">
+              <iframe title="RollerEarth 40075 club on Strava: latest activities" height="454" width="300" scrolling="no" loading="lazy" src="https://www.strava.com/clubs/2372055/latest-rides/c28857563e952f23165e730e1cec580777e29ee2?show_rides=true"></iframe>
+            </div>
+          </div>
+          <p class="phone-caption">Latest skates from the club, live from Strava</p>
         </div>
       </div>
     </div>
@@ -798,17 +790,6 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     window.addEventListener("resize", update);
     update();
   }
-
-  // Club: the official Strava widget loads only when the visitor asks for it.
-  $("club-toggle").addEventListener("click", () => {
-    const btn = $("club-toggle"), box = $("club-widget");
-    const open = btn.getAttribute("aria-expanded") !== "true";
-    if (open && !box.firstChild) {
-      box.innerHTML = `<iframe title="RollerEarth 40075 club on Strava: latest activities" height="454" width="300" scrolling="no" src="https://www.strava.com/clubs/2372055/latest-rides/c28857563e952f23165e730e1cec580777e29ee2?show_rides=true"></iframe>`;
-    }
-    box.hidden = !open;
-    btn.setAttribute("aria-expanded", String(open));
-  });
 
   $("year").textContent = new Date().getFullYear();
   const inline = document.getElementById("strava-data");
