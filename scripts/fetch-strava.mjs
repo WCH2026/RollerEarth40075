@@ -130,7 +130,7 @@ function records(acts) {
   const longestTime = withDist.reduce((m, a) => (!m || a.moving_time > m.moving_time ? a : m), null);
   const climb = withDist.reduce((m, a) => (!m || a.total_elevation_gain > m.total_elevation_gain ? a : m), null);
   const pick = (a, extra) =>
-    a && { id: a.id, name: a.name, date: a.start_date_local, distance_m: Math.round(a.distance), moving_time_s: a.moving_time, ...extra };
+    a && { id: a.id, name: a.name, date: dateOnly(a), distance_m: Math.round(a.distance), moving_time_s: a.moving_time, ...extra };
   return {
     longest_distance: pick(longest),
     fastest_avg_speed_10k: pick(fastest, { avg_speed_kmh: fastest && +(fastest.distance / fastest.moving_time * 3.6).toFixed(2) }),
@@ -139,12 +139,66 @@ function records(acts) {
   };
 }
 
+// --- Privacy: the published file never shows where a skate starts or ends, or at what time of day. ---
+const TRIM_METERS = 1200; // cut from each end of every route
+const dateOnly = (a) => String(a.start_date_local || a.start_date).slice(0, 10);
+
+function decodePolyline(str) {
+  const pts = [];
+  let i = 0, lat = 0, lng = 0;
+  while (i < str.length) {
+    for (const isLng of [false, true]) {
+      let result = 0, shift = 0, b;
+      do { b = str.charCodeAt(i++) - 63; result |= (b & 31) << shift; shift += 5; } while (b >= 32);
+      const delta = result & 1 ? ~(result >> 1) : result >> 1;
+      if (isLng) lng += delta; else lat += delta;
+    }
+    pts.push([lat / 1e5, lng / 1e5]);
+  }
+  return pts;
+}
+
+function encodePolyline(pts) {
+  let out = "", pLat = 0, pLng = 0;
+  const enc = (v) => {
+    v = v < 0 ? ~(v << 1) : v << 1;
+    while (v >= 32) { out += String.fromCharCode((32 | (v & 31)) + 63); v >>= 5; }
+    out += String.fromCharCode(v + 63);
+  };
+  for (const [la, ln] of pts) {
+    const lat = Math.round(la * 1e5), lng = Math.round(ln * 1e5);
+    enc(lat - pLat); enc(lng - pLng);
+    pLat = lat; pLng = lng;
+  }
+  return out;
+}
+
+function meters([la1, ln1], [la2, ln2]) {
+  const R = 6371000, rad = Math.PI / 180;
+  const x = (ln2 - ln1) * rad * Math.cos(((la1 + la2) / 2) * rad), y = (la2 - la1) * rad;
+  return Math.sqrt(x * x + y * y) * R;
+}
+
+/** Route with TRIM_METERS removed from both ends; null when too little is left to hide them. */
+function trimPolyline(str) {
+  if (!str) return null;
+  const pts = decodePolyline(str);
+  let a = 0, b = pts.length - 1, d = 0;
+  while (a < b && d < TRIM_METERS) { d += meters(pts[a], pts[a + 1]); a++; }
+  d = 0;
+  while (b > a && d < TRIM_METERS) { d += meters(pts[b], pts[b - 1]); b--; }
+  const kept = pts.slice(a, b + 1);
+  let len = 0;
+  for (let i = 1; i < kept.length; i++) len += meters(kept[i - 1], kept[i]);
+  return kept.length >= 2 && len >= TRIM_METERS ? encodePolyline(kept) : null;
+}
+
 function slimActivity(a) {
   return {
     id: a.id,
     name: a.name,
     sport_type: a.sport_type || a.type,
-    date: a.start_date_local,
+    date: dateOnly(a),
     distance_m: Math.round(a.distance),
     moving_time_s: a.moving_time,
     elapsed_time_s: a.elapsed_time,
@@ -153,7 +207,7 @@ function slimActivity(a) {
     max_speed_kmh: a.max_speed ? +(a.max_speed * 3.6).toFixed(2) : null,
     avg_hr: a.average_heartrate ? Math.round(a.average_heartrate) : null,
     kudos: a.kudos_count ?? 0,
-    polyline: a.map?.summary_polyline || null,
+    polyline: trimPolyline(a.map?.summary_polyline),
     url: `https://www.strava.com/activities/${a.id}`,
   };
 }
