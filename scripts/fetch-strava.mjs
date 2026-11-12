@@ -205,7 +205,6 @@ function slimActivity(a) {
     elevation_m: Math.round(a.total_elevation_gain || 0),
     avg_speed_kmh: a.moving_time ? +((a.distance / a.moving_time) * 3.6).toFixed(2) : null,
     max_speed_kmh: a.max_speed ? +(a.max_speed * 3.6).toFixed(2) : null,
-    avg_hr: a.average_heartrate ? Math.round(a.average_heartrate) : null,
     kudos: a.kudos_count ?? 0,
     polyline: trimPolyline(a.map?.summary_polyline),
     url: `https://www.strava.com/activities/${a.id}`,

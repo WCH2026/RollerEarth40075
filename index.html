@@ -822,7 +822,7 @@ a.sp:hover { border-color: var(--orange); background: var(--surface-2); }
     $("acts").innerHTML = (data.recent || []).slice(0, 8).map((a) => `
       <a class="act" href="${esc(a.url)}" target="_blank" rel="noopener">
         ${routeSvg(a.polyline)}
-        <div class="title">${esc(a.name)}<div class="meta">${dateFmt(a.date)}${a.avg_hr ? ` · ${a.avg_hr} bpm` : ""}${a.kudos ? ` · ${a.kudos} kudos` : ""}</div><span class="vos">View on Strava</span></div>
+        <div class="title">${esc(a.name)}<div class="meta">${dateFmt(a.date)}${a.kudos ? ` · ${a.kudos} kudos` : ""}</div><span class="vos">View on Strava</span></div>
         <div class="figs">
           <div><b>${km(a.distance_m)}</b><span>km</span></div>
           <div><b>${hms(a.moving_time_s)}</b><span>time</span></div>
