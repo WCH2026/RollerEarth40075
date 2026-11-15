@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T17:13:23.282Z",
+  "generated_at": "2026-11-15T22:51:24.247Z",
   "source": "strava",
   "sport_types": [
     "InlineSkate"
@@ -15,10 +15,10 @@
   },
   "totals": {
     "last_4_weeks": {
-      "count": 21,
-      "distance_m": 1161645,
-      "moving_time_s": 275216,
-      "elevation_m": 1074
+      "count": 20,
+      "distance_m": 1100037,
+      "moving_time_s": 260954,
+      "elevation_m": 1039
     },
     "year_to_date": {
       "count": 103,
