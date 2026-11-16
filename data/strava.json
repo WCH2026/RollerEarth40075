@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T22:51:24.247Z",
+  "generated_at": "2026-11-16T06:34:44.123Z",
   "source": "strava",
   "sport_types": [
     "InlineSkate"
@@ -15,50 +15,43 @@
   },
   "totals": {
     "last_4_weeks": {
-      "count": 20,
-      "distance_m": 1100037,
-      "moving_time_s": 260954,
-      "elevation_m": 1039
+      "count": 21,
+      "distance_m": 1165660,
+      "moving_time_s": 277568,
+      "elevation_m": 1102
     },
     "year_to_date": {
-      "count": 103,
-      "distance_m": 6027930,
-      "moving_time_s": 1533093,
-      "elevation_m": 8500
+      "count": 104,
+      "distance_m": 6093553,
+      "moving_time_s": 1549707,
+      "elevation_m": 8562
     },
     "last_12_months": {
-      "count": 110,
-      "distance_m": 6560565,
-      "moving_time_s": 1666925,
-      "elevation_m": 9250
+      "count": 111,
+      "distance_m": 6626188,
+      "moving_time_s": 1683539,
+      "elevation_m": 9313
     },
     "by_sport_type": {
       "InlineSkate": {
-        "count": 110,
-        "distance_m": 6560565,
-        "moving_time_s": 1666925,
-        "elevation_m": 9250
+        "count": 111,
+        "distance_m": 6626188,
+        "moving_time_s": 1683539,
+        "elevation_m": 9313
       }
     }
   },
   "journey": {
     "start_date": "2026-10-06",
     "goal_km": 40075,
-    "count": 29,
-    "distance_m": 1670724,
-    "moving_time_s": 401818,
-    "elevation_m": 1767,
-    "skate_days": 23,
-    "last_skate_date": "2026-11-13"
+    "count": 30,
+    "distance_m": 1736347,
+    "moving_time_s": 418432,
+    "elevation_m": 1830,
+    "skate_days": 24,
+    "last_skate_date": "2026-11-16"
   },
   "weekly": [
-    {
-      "week_start": "2026-07-27",
-      "count": 0,
-      "distance_m": 0,
-      "moving_time_s": 0,
-      "elevation_m": 0
-    },
     {
       "week_start": "2026-08-03",
       "count": 5,
@@ -159,10 +152,17 @@
     },
     {
       "week_start": "2026-11-09",
-      "count": 5,
-      "distance_m": 248901,
-      "moving_time_s": 57584,
-      "elevation_m": 202
+      "count": 6,
+      "distance_m": 314524,
+      "moving_time_s": 74198,
+      "elevation_m": 265
+    },
+    {
+      "week_start": "2026-11-16",
+      "count": 0,
+      "distance_m": 0,
+      "moving_time_s": 0,
+      "elevation_m": 0
     }
   ],
   "records": {
@@ -199,6 +199,21 @@
   },
   "recent": [
     {
+      "id": 21004212214,
+      "name": "Morning Activity",
+      "sport_type": "InlineSkate",
+      "date": "2026-11-16",
+      "distance_m": 65623,
+      "moving_time_s": 16614,
+      "elapsed_time_s": 20634,
+      "elevation_m": 63,
+      "avg_speed_kmh": 14.22,
+      "max_speed_kmh": 38.14,
+      "kudos": 10,
+      "polyline": "wd}FmneyRpBLrBw@hB~AAdDnBEhCe@tBpKjI`[DlD|A`FlBzPnCtb@MdGu@f@Kx@L~JgDrBl@ApBqBU}JbA{AXyG{Cic@eAcFc@uH_BgF?qC{DoOu@eG{A_CoCcNWkIsEcLuAcGcAF{@sDx@nD`A?\\r@`H~RL`ItBhJ}BkJ?yGoF_No@{DcDsIa@}GcCwEuDaUmCoJWsJmAgFYkF_BgFoBuWm@uCqAgAb@cD[sCuBqCkAcHaDgIeSkt@BcH_AeEHuFmMi`@eAeHqBoEyAiKqBuH{@yBuC{Cs@uBBa@tH{CkD}MDkDy@uFaCaMMgD`@wDw@}De@yWg@uAyEwDsL}FbGqLjIeVfCgLl@s@JkBr[o`AbAiF^eKmAeVtJm[`@oD}@iH{CsEcGuC}XoAuJmCipEcwAgCoBeIcCeKy@eF`@_DbAcFfEsKtYmPoF_@ZoNrb@qAv@s@tBhBhCuAzI{HjSiBjAqBDo@bBh@bEzD|E~@bH[|EcG`S}BBm@~Dm@JuHc@sAVgCgDu@F_H|Ck[xJeKtA{F~AuDnCaL~CkPxJeCnEmAfJF~BqAhCDrB_HbW}DrJNvAg@jBC`AvAqKtBDxJrBpAc@d@\\v@SoAO}Aj@kNyBq@xBe@dHWG|@}D?wA_@CjDsGxAyE~DkP\\qEnAuBCuCdA_IlCmFpP{J~GcBd@k@rAGhEuCvSeExYeJlHgDn@?zB`DlHEzB\\|@kEbCOhCuH~BeIZqDs@mH_EkFs@iEp@mBfBEjBaAhD}H~CaJk@Qn@GdAyEIgCyAkA^iBhCoCbMs`@x@OzO|E`EyLQLnFyLtCsCxD_BzFq@`L`AfHrB|CxBfpEfwA~JnCxYtA`FjCtCnD~@jG[bG}IrW[~BpAjUDlAg@dIgAjFy[~`AiCzLaEzLfGlBPzBgB|BXvD~@~CAjEkB|@yB~ChDdCv@lBRpS~@rH_@bERtFvDpRKzCrD|MsGtCk@r@`AhClDfEhCvJfAhIpDvMvC`JnBdBFxEzEdOSfDbApE@xHhNxf@u@g@d@TjA~De@En@\\vF|Px@hFMh@cCVaAfBOhDh@dErGdGfAzJvDlB`@`FzAvGLhEn@lAl@xMpBtGdBfK_@d@|@nAxBnKzAtBb@xGbAtDhKzZQnA}Df@qBU",
+      "url": "https://www.strava.com/activities/21004212214"
+    },
+    {
       "id": 20971291925,
       "name": "ROLLER EARTH 40 075 — DAY 23 | EVENING SKATE | 45.09 KM 🔥",
       "sport_type": "InlineSkate",
@@ -224,7 +239,7 @@
       "elevation_m": 31,
       "avg_speed_kmh": 15.31,
       "max_speed_kmh": 32.76,
-      "kudos": 40,
+      "kudos": 41,
       "polyline": "oz|FwneyRzEo@HjCnCbNzApCp@pFvDpNLvE`BhFVlFxAjIhCna@IhG{@~@QhBPrIOyK~@yA?qMgCw\\iAuGD{BcCoJCoD{DoOs@kFyAkCsCeNKyHeFcMmAuFqAOwAmGiBkJNc@aFeXcCmIa@wKmAwEMcEuAaG_@iFsBy@aAcAoAaKgFqE{@qBWyD^oClAwAhBOFg@{@kFwBaFqTex@DaH_AwDHoF{Lc`@{A{HgBwDcEqTiAkCqC_Dy@cC`IqDiDwLCqEeEeV\\gIy@iEH{JOlAUyLi@_B{DgDyMqGpGaMhHaTrEmRj[{_ArAgGf@gK{@gN]KV]WsErJc[`@cEk@_HaDwEkCaB{DeA_ZyAke@yOiBOa|@qXqGwB_@i@}d@}Mc~@iZ}AFU_Bu@BsCcBaHmBuJw@mHr@gFjCkChDuJfXwOgF{@`@gLf^eC`Ds@`BEp@bAh@`@dAgAlIu@l@wGnRsA`AcCZa@l@IlCv@rBbDrDhAhIg@dFwF`RcCBg@dEs@JuEa@yDP}BcDy@@iC|Ai`@`McHz@}HpB}DnCwKzCaPfJyCrEuA|I@hDoA`CDtBaFtRgEhKcAzJ[B|@aEd@yEhE_KtDyQf@[IkBnAcCAqCtAiJxBwDtPaK`L{C|DsCnHkB~HcAfOmFdCSfCyAtKeE~@FxBbDlCUpG\\\\Eb@eEhCGzFwR\\gFmA{HgEqFI{Cn@{A`CMzAqApDcJI_An@_@~A}DSO^GdAyHgBkCr@yBxA}@~M_b@`@c@pK`Dr@n@rBVzAwDfGqQ`CgDfEiCjE{@|DEpHp@xHvBfDxBzWnIPd@tABhgBdk@`Ev@nF~BxeAr\\xCr@dJLx@JnHV`Dn@jEbCzCfFl@xES`EkEfPuC~F]fCtAzXwAxMm\\|bABx@{@jAoAnHcHdT_JrRxMvG~CzB~@bBDnK\\vIt@fFc@pEZ~Ex@hGj@\\hA`J@vDjD`M]h@cHnCv@jAHnAdDpDpA~DdAxHjAtFzBnFl@dEfNvc@IpF~@nDAfH|Srv@hCpGv@hFI`@yBTq@l@i@bCJdEl@|BhGxFbAvJtD~AZpEdBfIJrDdA|DFbEXTBfEzC~KnCdQpCzFkB~@rBnA`@fDfGzPzDfMMvAc@TgE^sA]uBJ",
       "url": "https://www.strava.com/activities/20966843842"
     },
@@ -362,21 +377,6 @@
       "kudos": 48,
       "polyline": "yz|F}neyR~Ek@E}CuEkLeFkQa@yGl@rGYtAtApFhAGpA~FvElKVdKlCfMtAtBtFfWjCvOG~CnAbHvChc@WnF{@~@FjLEuK~@kBFwIoCo_@eBiOoBiHBuC{DyNw@qGsA}B}CaMFwGc@k@d@WmFsLsAaGkA@kAcFqA_LsFsXsCcKa@{KwDyTaCqXg@iBqAs@f@sCYyCmCaFu@}EeEgLqQap@_@uCNsE}@kDHsFiLg^oEaPuEwUsEqGu@oCtH_DmDyNHyCyDuTPwIGmBw@oAQcWy@{B_DgCnEuFLmEsAmIjBaCi@wByFcBf@[hFyTz@}Cd\\yaAnA_H^uD}AmSZk@WsE^qCpHmS|@sFa@aGwCuFsDeC_Dw@_YiAsUgHiHeDYT{Bq@eb@{Mo@q@qIoB{{Bus@mImC{CyBoHwBkKy@_Gj@mEjBwD~DyJpXkPaFgAdBToAqL|_@{B`Cs@zBfBtBy@rIwI`T{AfA}BDm@pBl@~DfDpDhAdJk@nFqFrQgCBa@|Dg@J{KM_CgDy@BmHnD}SnGq@MOh@kC|@mRnDyE|CqKvCmPtJeCdEuAjOiAzB@tB}EhRiF|Mq@bIt@mInFkMBkBnEsOEuBpA_CGgCrAeJrBkE`QaKzKuCjEyCrToEdY{IhHiDbDhDbLPh@_@ReDjCK~FuR^gFu@cGgE_Gi@wDt@mB|Dw@rEgJpC}I~@_FAwBcBqB|@_CpAo@dNkb@p@I~O~EbK_Y~GyFfIkAbL|@hHtBdD|Bv}D~nApIxDp@KpP~EzZ`BhE|BnDdGf@`EUpEaKb]CjEr@tC`@fJHlCStEqH`TS`CkT|o@D~@sEhPiIvUeFfL}Ai@mDhGsBn@iBEaZ}Ja@s@{i@iQ_DVmCtG{B}@Kx@{A{@sAdAkNwE{@tBy@\\eDu@Og@v@Cs@^nD~@|@]z@yBhNtEbAq@hBp@\\}@vB|@zBqGbDSvg@bPvPlH|KbDnEe@~DwGxOtHxEvEp@jRYnAhAhISrIzDnTG`DpDnN}H|DnEzGvApDpDhSxClKbKd[dB|GOlE`AzDDdIvRfs@fDzI^jE`DnF\\pC]~BfCjGhBxVlBlNnAdFd@vKdCtIfCtPpBzFH|DpC~JQl@Rb@fAIjAxFrF|Ng@dBmEh@iAW",
       "url": "https://www.strava.com/activities/20798225075"
-    },
-    {
-      "id": 20777630363,
-      "name": "🌍 ROLLER EARTH 40 075 — DAY 15 | 62.13 KM",
-      "sport_type": "InlineSkate",
-      "date": "2026-10-29",
-      "distance_m": 62133,
-      "moving_time_s": 14300,
-      "elapsed_time_s": 17280,
-      "elevation_m": 45,
-      "avg_speed_kmh": 15.64,
-      "max_speed_kmh": 56.82,
-      "kudos": 47,
-      "polyline": "qa}FmneyRpAcA|Bt@fFm@HxC`CvLjBtDpBrL`CnIAnDdBnF\\lGdArFvCfa@MvI}@j@Rj@]dANpIOmL~@_ATgH{Cmb@aAuEm@uI{AgFEkDmBsG}BqM{AuCeBoIk@gDIiGsDkLiC_IaCyF]kHyBgD_E_VmCkJi@oM_AsCKiEeBmHuBwVc@_C{AmAf@kDa@_DwCqFa@sD{CoHwR_s@i@eDRqE_A{DLcFmMua@kAkGiB}DaCmOwBqGeD{D}@wC`IkD_DiLIgF_CaKy@iHMmDZcEo@uD]oV{@_CiDmCfFsFBaEqAmI~AyBOmBmA{@uC]g@a@nEuM~@mFjAmCMa@jFuN|E_QhB_D`Le`@r@{J}@sPUO@qFpJoY`@{Gk@qEyCgFkEiC{Ds@eUo@}HyBshE}sA{HkCsCqBmHwB}Jy@wGj@kEpByDpE{DdLuDtJgPiFe@V_Ndb@{A|@o@vBdBdCGbCg@nBc@NCvAk@l@aGjQoAlAsCRm@nBh@zDbDnD`@hAp@fH_@fEaGvRgCDc@|DYF{I_@mAP_CcDu@@_HhDgZdJsLhB_FvAuDjCwLjDcO`Jg@JkAaBKnEqBzL@bDoA|BV~AkD~JeAfGeEtJqArIC|@nA}JnEaMTJSj@n@{EfDcLEmBpAoCE}BrAmJbCeEjPyJdL_D`EsCbS{D~ZoJxGgDt@BvBdDtBSrI^b@mEpBD`@k@dGqU_@iIm@kBy@c@}BuDSeDn@{BvAZlBy@~ByEzDwMXGfAaF?{B_BqA?_@r@yB|A_ArMqa@Xa@p@LjOvE~ByFxFoP|DiEdFoBvC]|DBpJzBxA~@z}Ej|AbFrAbW|@hEnAnCnBxBhDv@xH]pDqB~Go@b@@v@qEjNIxBxAlUm@`J}@pEoZr_Ai@d@Dz@k@t@aBrIiE~L`GbBZxBiBjCvAnIC`Ek@pAoANG|@}AjAdD`C~@zB@dLTvHz@hFa@tD`@nHbDbPEpDrDhN_IlDx@nCpDdElBxGvB`NtBvEj@rEhMt`@d@dDUvC~@tD?hH~Qnq@dEhLb@hE|CnF\\vC[|BNz@hAfAd@xBpBvVvArG`B|LT|IzCrK`CzPpBdGQjB~BrKREC`A^lAjAGpA|Fn@v@`E~MYbAuEh@wAS",
-      "url": "https://www.strava.com/activities/20777630363"
     }
   ]
 }
