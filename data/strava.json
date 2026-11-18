@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T22:26:36.968Z",
+  "generated_at": "2026-11-18T07:33:07.487Z",
   "source": "strava",
   "sport_types": [
     "InlineSkate"
@@ -15,41 +15,41 @@
   },
   "totals": {
     "last_4_weeks": {
-      "count": 21,
-      "distance_m": 1164596,
-      "moving_time_s": 275524,
-      "elevation_m": 1091
+      "count": 22,
+      "distance_m": 1200283,
+      "moving_time_s": 284223,
+      "elevation_m": 1120
     },
     "year_to_date": {
-      "count": 106,
-      "distance_m": 6202701,
-      "moving_time_s": 1575100,
-      "elevation_m": 8669
+      "count": 107,
+      "distance_m": 6238388,
+      "moving_time_s": 1583799,
+      "elevation_m": 8698
     },
     "last_12_months": {
-      "count": 113,
-      "distance_m": 6735336,
-      "moving_time_s": 1708932,
-      "elevation_m": 9420
+      "count": 114,
+      "distance_m": 6771023,
+      "moving_time_s": 1717631,
+      "elevation_m": 9449
     },
     "by_sport_type": {
       "InlineSkate": {
-        "count": 113,
-        "distance_m": 6735336,
-        "moving_time_s": 1708932,
-        "elevation_m": 9420
+        "count": 114,
+        "distance_m": 6771023,
+        "moving_time_s": 1717631,
+        "elevation_m": 9449
       }
     }
   },
   "journey": {
     "start_date": "2026-10-06",
     "goal_km": 40075,
-    "count": 32,
-    "distance_m": 1845495,
-    "moving_time_s": 443825,
-    "elevation_m": 1937,
-    "skate_days": 25,
-    "last_skate_date": "2026-11-17"
+    "count": 33,
+    "distance_m": 1881182,
+    "moving_time_s": 452524,
+    "elevation_m": 1965,
+    "skate_days": 26,
+    "last_skate_date": "2026-11-18"
   },
   "weekly": [
     {
@@ -159,10 +159,10 @@
     },
     {
       "week_start": "2026-11-16",
-      "count": 2,
-      "distance_m": 109148,
-      "moving_time_s": 25393,
-      "elevation_m": 107
+      "count": 3,
+      "distance_m": 144835,
+      "moving_time_s": 34092,
+      "elevation_m": 136
     }
   ],
   "records": {
@@ -199,6 +199,21 @@
   },
   "recent": [
     {
+      "id": 21029184677,
+      "name": "🌍 ROLLER EARTH 40 075 — DAY 26 | MORNING SKATE | 35.68 KM 🔥",
+      "sport_type": "InlineSkate",
+      "date": "2026-11-18",
+      "distance_m": 35687,
+      "moving_time_s": 8699,
+      "elapsed_time_s": 9367,
+      "elevation_m": 29,
+      "avg_speed_kmh": 14.77,
+      "max_speed_kmh": 65.06,
+      "kudos": 13,
+      "polyline": "az|FeoeyR`E_@LOJ`DpB~I@|@lBnDhBlLvCrKFhDNHfAlFZ|BCfBhApGl@zKjBzQOvKa@b@]rBKzFX\\CfA[uCBgEP}Bp@[H}IgBcRe@yLoAoGBuBi@mEuAsE@iCuDmOeAeHoAcBg@qDgAsDg@qDI_GqE_McB{G_AyAcAkDc@eH{AwBuA}E_BwIg@cFqCsJUsJeAoEMuDaBgHc@kFU[kAGq@k@m@yBP}@q@eBWsB]o@kAk@iCaCk@mAYkB?oD~@oCvCy@WcDkAwCgCiIuI_\\mBiG_@a@CoAoCeJMmATOOg@PiCSqBq@aBPyEkCyJ{@oAcGmSiAcGgCiGiA{IwAaGaBqDaCcC}@{ClHkCNYiAeGaBiE?cEu@aFqAgEq@kGIiDh@oD}@gE@{DU{ANsBKgJa@wAoAyAeGqDmK}EeClE_A~@}Ap@cBE{IeCwDiBoJwCWm@si@aQiDRw@`CgA~BkBg@a@h@]Dk@MQe@_@l@y@@}DuAIW}GwAeA|BeAVqC}@CYoEgAcCwAuBi@oCr@}AEaJiCkGkCg@BeAeAoLaEQe@l@wCy@FsAe@mAqAgGgBuCQJMm@^@~Aw@qAjAc@dAd@pDJlDbApArAbCl@i@jCP`@vF|B`EfA|@~@vDnAfN`ExA?rCk@hBh@t@p@vF~A`@t@lDn@t@UdAgC~CjArAX|BTbB|@bANNm@BPlBh@Fu@jCn@rBgGhDUlj@fQ@^ZP`IfC|BnA`LhDxBB|Aq@vDoGfAbAlPtHrB~B\\dBCdIf@lFGpDr@zDa@`Ep@hK~AtFp@hE?xDvB`Hl@dDC|@r@vBGl@eAv@Gf@pBjEx@PZb@j@fDfCdHjAtBDx@jB~EOHVGLT@bB\\hEl@hCf@vGdA|DQrG@v@pAlFQ|C~@tDAnHxJ~]JxAzCfJd@t@B~@~BbJtAfCdAzFMd@gABaA\\o@~@]pBTlE|@`CjEfDb@t@NpBf@dAIvA^rB`Al@lAL`@`@ZvE~ApHHpDj@lA^bC@nFT|BvCzKdClPtAhF[Tt@hBxCtOlAJrAvFl@l@t@vCvBjFTzA[hAuEn@mAOk@a@yDp@ZZQB_@O",
+      "url": "https://www.strava.com/activities/21029184677"
+    },
+    {
       "id": 21020229645,
       "name": "🌍 ROLLER EARTH 40 075 — DAY 25 | EVENING SKATE | 46.81 KM 🔥",
       "sport_type": "InlineSkate",
@@ -209,7 +224,7 @@
       "elevation_m": 71,
       "avg_speed_kmh": 15.11,
       "max_speed_kmh": 57.78,
-      "kudos": 23,
+      "kudos": 28,
       "polyline": "{z|FyneyRdFo@FfDpCzMtArBh@pEfExPLbE~AxFXtFxEtg@e@bTRhKe@jKTf]u@dB@z@vBrDlGfB^r@WjBaFzEsApDN~KjAlH_@bDLj@t@X{Bv@z@hHt@LzM{CfToI~N}IrGoFlEqFvC{Ah@FxJ~Nj@N^iAa@z@VWsIrEw@vAvBbAxDtCw@|A_@lDh@|HpAxCzBpCfEhBzMpIWvAiDnEwBhDaNaHwB_@_CoBoHeBoOcAaD|L@pAxBnChKpCjH|FlLdGuChGcBe@yCx@LbDnA|@mAdBoB}@eGLaAy@kCa@IaA}@a@dAVPnA`CVvAjAV_@rC?tD|@rJkP@cAyLuFkGiFsKmDgBiBDZq@Q`@yE~BmI`@U[LwAnGm@dAiAvHCy@bF}QrKd@~HzAlC|@tAzAvBX^|@{@Iy@r@bBcBvAp@wBz@pDWjIhEhHcMiToMkDuFu@sDIcDrA_HwDuCoAQc@s@nBgCbC}A|AORi@u@GyI}Mo@OkCrAoFvGmJjHmLvG}IvDgJxCgNjDk@QmEbAaFViH{@y@k@[}Ab@qArAc@AyKa@iDTUa@a@mAkFh@}Bc@gExAkF^mHoAyGcEuHq]g[hB}Ah@S\\T|@q@vJQ~@{Bz@k@pId@zDHFgAfCo@dAy@T{@X@b@bDfECjB{ALo@[sABqENsBp@g@NaG]mHwBmYgAoGWmFgBsGGqDwDcO{@cGqAyBoCwMMaI_F{LsAaGoAScBiIoA[^BXi@oAoFT]uDcQc@{EsCkJ[oKkAaEGmDeB}Hc@kFoDsAQmFc@c@IaB{FoFs@mBSkEb@uC~@{@|Bk@{@yFiDcJeSkt@HmG_A{DH{F_N{b@u@wE{A_CkCsPa@eBsBiFqCwCy@mCbIkDwDcNHiD_CkKw@}GQ_E`@kDu@iECwJNxJn@pD]fDLnEt@|GlAlDt@`FI|CnDhN{HxDx@nC`CzBbAzBzAdFhB|L`C~Fh@|DfH~UvAvCjBnHOvE`AbEAdHnQho@V~BzDnJh@bEzCvFZrC]|BvAvBj@~BrBxW`BnHDlDlArEd@zKfCzIhC`QpBbGMlAzCzOtAZnArFn@n@~DfMKrA[NeEf@eGe@NnAK]",
       "url": "https://www.strava.com/activities/21020229645"
     },
@@ -224,7 +239,7 @@
       "elevation_m": 36,
       "avg_speed_kmh": 15.76,
       "max_speed_kmh": 42.64,
-      "kudos": 37,
+      "kudos": 38,
       "polyline": "c~|F{oeyRfB\\dFe@HxCpC|MtAbCrCxO~A|EBhD`B|F`@xGfA`GvCdc@UjGs@h@MnBNlIeDbBl@ErB_BGyKdAuCOiCX{A{Ceb@cAuFa@eHaBqF?qC_GgXkAmBsCyMWyI{EkLwAwGwBmF_@}GaBiCsAoE_CsLEiCuCuKUyImA}EAcCcBoIKaDk@cBwAO_Ay@oAiKqGqFq@uFPqC`A}A~B_@Pi@_AmFk@yBuAaCgDqMBu@gAkB{Lqc@DqH}@sDNyEiNwc@k@kEwBqEuBiNkBkGmDiEcAyC~HqDiDwLDaEiCcLmAaKh@aGw@uFY_UaAcC}C_CbF{F@wDwAyIhBaCa@_C{F}AzDgLbDmNd[m_AxAaI\\qFkAwSc@eB^a@XkDrIcW\\qDk@yFcCyE}E_DkEw@qTi@mDaAsnAc`@kXoJkBQucBsi@aFaBmCsBsGmBcLkAwGj@oEtBmD~DwE`N_DfI_PcFg@DeNlb@{A`As@vBfB`C?|AmArF{HjSaBrAkCRi@tBt@nDpDlEbAdGg@fHsFxQkCNc@zDc@HqIa@oATuB}Cw@IcHhDa[pJwRtD_DrA?`@kA|@o@OyBhAY[uD~AePpJoApA}@hCmAxIAxCmA~BFpB{CrJgAnGgExJeAbKY?`BkKhEiKzEmRCmBnAoCEiCn@mBb@sF~@cCbBeBdOwIbHiBrC_AdEsCfVgFSLa@HbYyIrG_DlALbBpCdGIvD\\j@iEdC?`GcS\\sDm@gHe@uAmDcE_@yDr@cB`CIvAmAxHcSHmB`@Oj@aFwBsB~@kCvAu@|Mab@n@UdP|EpDkJhE_MdDsDnF_CnGa@jJz@pHxBnElCpZbK~fAh]|iBpk@bCTj@n@fFxA~BKh@\\bRj@|DjAz@jAtAf@nCbFf@bG]pDsJtZnA~W_@zIqA`G{IrVZ_@ePjh@i@TDhAg@l@mBdJaEzLnB^zCjAPtBiBdCvAlICbEyCxCiApAdDzBdAvCT`Tv@hG_@vDHnD|DnTIfCXnBxCpKaInDp@|CzBtAfBfEpDtR~BzFn@jEfNvc@OhE`AbEAnHlDnMZAIj@lNpg@Mj@d@P`BdE|@lFKZiCd@m@bA]bCX~Ep@xAtF`F~@tJxD~Ab@pFxAjGLnElAnER~IbDrLJxC~DvQUf@lEhSpAClA`GhBnEjBhD\\zC_@jAwEb@wA]",
       "url": "https://www.strava.com/activities/21016293898"
     },
@@ -239,7 +254,7 @@
       "elevation_m": 63,
       "avg_speed_kmh": 14.22,
       "max_speed_kmh": 38.14,
-      "kudos": 36,
+      "kudos": 37,
       "polyline": "wd}FmneyRpBLrBw@hB~AAdDnBEhCe@tBpKjI`[DlD|A`FlBzPnCtb@MdGu@f@Kx@L~JgDrBl@ApBqBU}JbA{AXyG{Cic@eAcFc@uH_BgF?qC{DoOu@eG{A_CoCcNWkIsEcLuAcGcAF{@sDx@nD`A?\\r@`H~RL`ItBhJ}BkJ?yGoF_No@{DcDsIa@}GcCwEuDaUmCoJWsJmAgFYkF_BgFoBuWm@uCqAgAb@cD[sCuBqCkAcHaDgIeSkt@BcH_AeEHuFmMi`@eAeHqBoEyAiKqBuH{@yBuC{Cs@uBBa@tH{CkD}MDkDy@uFaCaMMgD`@wDw@}De@yWg@uAyEwDsL}FbGqLjIeVfCgLl@s@JkBr[o`AbAiF^eKmAeVtJm[`@oD}@iH{CsEcGuC}XoAuJmCipEcwAgCoBeIcCeKy@eF`@_DbAcFfEsKtYmPoF_@ZoNrb@qAv@s@tBhBhCuAzI{HjSiBjAqBDo@bBh@bEzD|E~@bH[|EcG`S}BBm@~Dm@JuHc@sAVgCgDu@F_H|Ck[xJeKtA{F~AuDnCaL~CkPxJeCnEmAfJF~BqAhCDrB_HbW}DrJNvAg@jBC`AvAqKtBDxJrBpAc@d@\\v@SoAO}Aj@kNyBq@xBe@dHWG|@}D?wA_@CjDsGxAyE~DkP\\qEnAuBCuCdA_IlCmFpP{J~GcBd@k@rAGhEuCvSeExYeJlHgDn@?zB`DlHEzB\\|@kEbCOhCuH~BeIZqDs@mH_EkFs@iEp@mBfBEjBaAhD}H~CaJk@Qn@GdAyEIgCyAkA^iBhCoCbMs`@x@OzO|E`EyLQLnFyLtCsCxD_BzFq@`L`AfHrB|CxBfpEfwA~JnCxYtA`FjCtCnD~@jG[bG}IrW[~BpAjUDlAg@dIgAjFy[~`AiCzLaEzLfGlBPzBgB|BXvD~@~CAjEkB|@yB~ChDdCv@lBRpS~@rH_@bERtFvDpRKzCrD|MsGtCk@r@`AhClDfEhCvJfAhIpDvMvC`JnBdBFxEzEdOSfDbApE@xHhNxf@u@g@d@TjA~De@En@\\vF|Px@hFMh@cCVaAfBOhDh@dErGdGfAzJvDlB`@`FzAvGLhEn@lAl@xMpBtGdBfK_@d@|@nAxBnKzAtBb@xGbAtDhKzZQnA}Df@qBU",
       "url": "https://www.strava.com/activities/21004212214"
     },
@@ -254,7 +269,7 @@
       "elevation_m": 54,
       "avg_speed_kmh": 16.06,
       "max_speed_kmh": 43.27,
-      "kudos": 38,
+      "kudos": 39,
       "polyline": "}}|FsoeyRnAPrFa@FxCzAfFVjCf@v@Op@`BjC?zAlF|SPxElApDNhDPxBnAzGpCd_@c@fTRlIk@tMVv[u@pDp@rBjAnA|FxAd@|@UjBuEnEyAnDFxJnAdJ_@zCHd@|@ZeCv@bAtHn@BpOmDzTaJhIaFfASHk@nJsH|ByDvDqBtKhOgBj@i@~@uDnDPn@tANdE|CiA|DOnDbBlIfFvFrHnDfH|EwC|Fu@ZqBfDaNeHaC]wA}AiBs@a@HwG_B_Hg@U_@sC^cDtPhDfBfK~CxF~ExA\\zJtFgCpFk@RqAg@}Cz@\\fCOb@pAj@cAlByB{@mEIz@LbEN`An@nD_Fl@}BbDsEGiAaEiBiDcCeA@_BeByFuDmIaC_CqAUi@f@cFxAoDv@sCfLp@dKpBnCxB~B`@tM`HtGyKVs@a@[kRoK_B_BmByD}@uGBu@b@gEj@a@Fu@}DwC}ASSu@bA_BhAo@MO~DsAh@m@E`@w@D}C}GwDoFi@M{CfBaDlEwLjJgJnFgL~EsNfEcIbBw@ABSqA`AwC`@aHLmEs@}@q@[wAd@aBnAWBu@MyKqB}Kd@uBe@wE`B}FXoGmAeFD{@{D}Gc^{[hBgB`AAx@g@~JM|BcDnITp@SlCh@ZsAvMFrBcBKuKNu@l@OP_Hc@qIsBaXkAuGAkCyBmJGeDwDkOw@sF}AqCiBiKq@{A\\iGyFyMkAuFkC_Hk@sHwAsBmAoEuCiRcCiI_@oKiAeEKgEaBuGQcEa@s@yASy@u@]kFc@c@U}BeFoEy@iBUgFf@kC~@y@vBa@y@}FqCaH}Smv@FwGaAgEHiF]eAQFq@gE_BiD{FeRc@sBLi@k@q@U_C}BeFgCuOyAsEyC_DiAiD~HqDaDsLGcE{@wF}AyGYMLk@c@}F^{Ew@aGB{HAhIv@zE_@tEJ~C`ApHzBzJI~CpDpN}HvD`AtCjC`CnAlDfA|D~AfLbC|Fh@~DdNnc@JzAYxBfAvEOvEXnBjSfu@lCpG~@pFQd@kCh@q@nAYpBd@nFf@lAjExCj@~@LjBb@d@VhF|@x@nB\\d@rFtA~FTdFbAhDd@dLlCtJbCnPzAhFpA~Ab@|GfCvGpAlGt@z@fAtDQJx@v@lA~D]bBwEf@oAY",
       "url": "https://www.strava.com/activities/20971291925"
     },
@@ -269,7 +284,7 @@
       "elevation_m": 31,
       "avg_speed_kmh": 15.31,
       "max_speed_kmh": 32.76,
-      "kudos": 44,
+      "kudos": 45,
       "polyline": "oz|FwneyRzEo@HjCnCbNzApCp@pFvDpNLvE`BhFVlFxAjIhCna@IhG{@~@QhBPrIOyK~@yA?qMgCw\\iAuGD{BcCoJCoD{DoOs@kFyAkCsCeNKyHeFcMmAuFqAOwAmGiBkJNc@aFeXcCmIa@wKmAwEMcEuAaG_@iFsBy@aAcAoAaKgFqE{@qBWyD^oClAwAhBOFg@{@kFwBaFqTex@DaH_AwDHoF{Lc`@{A{HgBwDcEqTiAkCqC_Dy@cC`IqDiDwLCqEeEeV\\gIy@iEH{JOlAUyLi@_B{DgDyMqGpGaMhHaTrEmRj[{_ArAgGf@gK{@gN]KV]WsErJc[`@cEk@_HaDwEkCaB{DeA_ZyAke@yOiBOa|@qXqGwB_@i@}d@}Mc~@iZ}AFU_Bu@BsCcBaHmBuJw@mHr@gFjCkChDuJfXwOgF{@`@gLf^eC`Ds@`BEp@bAh@`@dAgAlIu@l@wGnRsA`AcCZa@l@IlCv@rBbDrDhAhIg@dFwF`RcCBg@dEs@JuEa@yDP}BcDy@@iC|Ai`@`McHz@}HpB}DnCwKzCaPfJyCrEuA|I@hDoA`CDtBaFtRgEhKcAzJ[B|@aEd@yEhE_KtDyQf@[IkBnAcCAqCtAiJxBwDtPaK`L{C|DsCnHkB~HcAfOmFdCSfCyAtKeE~@FxBbDlCUpG\\\\Eb@eEhCGzFwR\\gFmA{HgEqFI{Cn@{A`CMzAqApDcJI_An@_@~A}DSO^GdAyHgBkCr@yBxA}@~M_b@`@c@pK`Dr@n@rBVzAwDfGqQ`CgDfEiCjE{@|DEpHp@xHvBfDxBzWnIPd@tABhgBdk@`Ev@nF~BxeAr\\xCr@dJLx@JnHV`Dn@jEbCzCfFl@xES`EkEfPuC~F]fCtAzXwAxMm\\|bABx@{@jAoAnHcHdT_JrRxMvG~CzB~@bBDnK\\vIt@fFc@pEZ~Ex@hGj@\\hA`J@vDjD`M]h@cHnCv@jAHnAdDpDpA~DdAxHjAtFzBnFl@dEfNvc@IpF~@nDAfH|Srv@hCpGv@hFI`@yBTq@l@i@bCJdEl@|BhGxFbAvJtD~AZpEdBfIJrDdA|DFbEXTBfEzC~KnCdQpCzFkB~@rBnA`@fDfGzPzDfMMvAc@TgE^sA]uBJ",
       "url": "https://www.strava.com/activities/20966843842"
     },
@@ -284,7 +299,7 @@
       "elevation_m": 40,
       "avg_speed_kmh": 15.69,
       "max_speed_kmh": 67.83,
-      "kudos": 45,
+      "kudos": 46,
       "polyline": "s_~F}oayR`AhNf@bBvBfByAt@eCdDwAFx@tC^FL_AfA{A|EmEKh@tCxCtEhEvBjArFfFD`@h@AdFhFzCrFpA`IUtG_B~Fd@~Dc@jCzBtLCjLwA^[bAP|Aj@p@nC|@pIGhQaDrP_FpJyDtKcG`DgCh@BRu@dIuHj@wAhDgBf@BzIzMTtAaBVoD`Cs@tA\\f@fCv@jC~Bq@pAc@hEHlDj@rC~DjG`Ap@~QhKBf@kCfFw@\\sB`DiNeHaCYuAaBiBm@wKqBcJUaAtDkAfHCr@`AtAz@t@rJnCzH~FrE|A~EbDUbBiCrDwAy@]b@cC^\\zBOf@lA|@cA|AiBs@eEOjFXbAh@~CkEbFkKc@k@cAQwGyDgAMqHgGuIaCcB{AgA[b@y@ImCzB}G`@a@vAg@~If@xKzBjBpBfC^pMzGtGyKVw@aUsM}CmFs@uDCsC\\gDz@mBeEaDwAYOm@v@qAvCqALo@`B[n@w@]P_By@_EqHaBaCe@M_DdB{CbEkKlIaN|H{MdF[d@mNbD{GlAyFz@aF?eEo@cA_AUiAf@aBpAYEuKcAuIq@sBd@eCm@mEbBeFZwGmAaHgA{CqB{CoNqMcCwAoJmJbByAhAEdAk@xJKbA}Br@e@~KHtBZXsAtMFhBsALg@W{AJoH|@_ALoGa@uHsB{XiAeGAmCg@sD_BkEDaDeCgJqBgLsAaCoCyMUoIoD_Ko@s@oAaGeALaBgHmBuJVY_EgQ_@oE{AwF@{@g@WQ_AUcJkAmEQ_FuA_G[mEWq@aBWeAeAq@cKORuF_Fu@oBW{Dp@kD~@{@`BMP_@aA{Fk@o@}AyEcT}v@OaBZeD_AwEH_FiEeMwGgTfAwAxCq@FoCcCiHuEiLy@gE{@A}B{EtAeCm@uDo@qCyBiHAoEqCkMu@kK^oDw@_EBcKBzIt@hEa@vDRlEx@|GvBnJPbGdB~Ex@|Db@|DmApAAf@lBjEjAPt@dEvEjLdCfHErCkCh@sAjAvG~TdEdMMdFbApDQzEp@zD`Qvn@bCdIbAzAr@lFIf@gBHgA`Ag@rDPvC|@fCtF~ELtB`AnG|@n@pAJf@`AThE~AdHHrDfAzDTfJrBxGlDdUlAjEzArBj@tHrBnFpItWMxA_@NmEf@cBc@yClEF}CiAA",
       "url": "https://www.strava.com/activities/20945360258"
     },
@@ -299,7 +314,7 @@
       "elevation_m": 44,
       "avg_speed_kmh": 15.69,
       "max_speed_kmh": 58.25,
-      "kudos": 42,
+      "kudos": 43,
       "polyline": "w}|FineyRzHy@`@pE`BvFRvB^zAdAzAh@|E|DrONdEbBvFZjGhAtGjA`ShArLQxHi@d@Yz@LpEOvAF|BF}@C_DKmELs@n@[RsIkBeTa@uJmAqGa@gHgBgGCqCmBaH{BaNcBsCcAwGaAgDU}IcBwCyByGiBcH{CiA`B]Cu@u@mBSgEa@aByBaEiAaIw@oCDm@g@aDw@wC_AmCi@eEGgGWwBg@qA_@iFmA}Ee@aGe@a@eAKu@m@e@gB@yAq@kCKgBq@QgDmCiAeCWyD`@eCz@oApBg@c@{FkA{ByA}EsEaQa@k@wCmMwFaRQ}ANwF}@cDToCI{AaBkGs@eBq@aAsAuFcGgRHmA_C_FwAoKaC}IeA_BkBaB{@oCHYfHcCPm@g@q@s@uDmAkDC}E}@kFqBoJ[}Fd@}Do@mDg@aWc@_BgEuDoMsGkAe@aBtDcAtAaBl@wAF_IaC_Ce@qDeBmGqBqAgAgR{FyTmHeEHcAhD]`@y@BaCv@aAOQc@Qd@aABcN_E}@xBiATwBe@_@g@sCo@uCiAg@k@eBg@qDl@aDc@uPiFoAgAeL}D_@k@r@oBMe@a@BcAa@wB_Bm@[aHgAWBmApB[Ud@cBfA^q@NrB?dDn@fA?xDjBfAhBUfAj@j@zKtD`A~@xBx@`PzEnABbDu@~CzAfCbAhDx@ZMQSz@tAjA\\fAc@r@wBlNjEf@A`@q@JXpAX`@g@zBl@vBqGbDO`K|Ce@ODJR@[KfDfAbAHzCxAbSlGNb@~IrCvBpAlLdDhB@hA_@bAeAfCsEdS`K|@p@l@dAXbB@|JTxIt@|DYzFp@pJdBnGj@rDSpCbAnCtBrIMZwG|BYX~@xCz@j@dB|BZ@En@dB|FbBnL~BzFn@fEfHbV~@fAV`ApBlISxD`A~DKxFNdAhRvr@lAfDFn@]Ph@En@jBTRPIeQrL`QsLA|@r@vDtClFXrC]pBLt@x@l@~@bD^nEC|Bn@xBd@hIpAjFTjFl@rA\\fCBdCRPSj@JrBTfBtApDr@dD`@lElDhPK~@hBhJxAfGTV|@KrAxFj@r@dAxD`@VzApFCl@oAdAwC\\eAMBKbAAqAh@qFHeA`@",
       "url": "https://www.strava.com/activities/20941185542"
     },
@@ -314,7 +329,7 @@
       "elevation_m": 33,
       "avg_speed_kmh": 15.31,
       "max_speed_kmh": 40.59,
-      "kudos": 42,
+      "kudos": 43,
       "polyline": "}b}F_neyRjB}@|C`@zEk@LxClCrMzAlChCjOlBjGBhDzAhF`@rGhAhGpCna@C`H{@fASlBRpIS}IPmBn@aAHkJmCk^mAaHa@qGcBaG@aC_EmPq@eF_BqCY_DsBaIO{HkD_Km@k@y@oE}CcIg@qEm@B_AeDPm@wDyPa@gFgCqIW}K{AoE@uCmBwIsBsVq@cDmA_A^cDYwCgCkE_AkFeAgBcDgN_HuT?qAy@gAiGwTd@o@L_DgAmDH_GsKo\\cC{KkCeHsAwJmBgHuDyE{@oCxHqDsDaNHeD_CiKw@gHO_D^wDo@sEc@kWs@aBmDyCuMuGpGsMnFqOlGwVb@_@nDoMtVwu@n@cLqAkTDoC~IoXl@cEq@}IcDoEmGuCcXeAoJiCokEcuAqDmA{CwBkCe@sCoAgKu@cGf@qDpAeEdEwEvKaAnEuBxEmP_Fo@j@oMfa@yA`Aq@jBCb@dAh@`@x@E~B_AlEiIbTyAhAaCJk@|AD|Bb@nA`DnDf@vAj@`G_@xE}ErOa@`BeCLe@rDo@PyHa@}ANuB{CcACyGdDwZnJsHdAwIvBuDrCuBp@sHnBkO~IwArA{@pB{AvJ@zCkAtB[nEsFnSqCnGc@rEcAvDfB{KbEuJHqBd@a@J}A`D}JEkBpAsCCmCvAqJ~@{BfAgA~OmJdHiBtBq@zDqCvCu@J[~MiBh[uJzGeD`A@rB`DrGGhCZd@SZuDnCQzFgR`@{FkAoH_AgAq@ADc@cBwCG}Br@kBvBIrA}@zC_HpDwJQOVCn@sCToDU{@qAc@C[v@gCbBgAvMsa@l@SpPrElDwJGg@tEuKjDoDxDcB`Em@|CNtA@~{Ane@tsCp}@vU|@lDh@dC`AxBjBfC|Ef@~DOvDcKh]r@~JZfJ]pB\\r@AxB_BxH{Zd`Ag@l@Fh@wFfSuGfR_GfL|BbBtIrDvDnCj@rAl@bXn@xDa@bEPnDx@`HdA~Ct@rF@vDhDdMWd@cGpBYt@n@tBpCtCfArCtD|R|BtFj@fEbHvUbE~LOdF`AbDDhIdSht@|CjIz@vFiCt@y@|@a@~BRhE|@bCjF|DTnC`@x@NlEzDdB`@dF~AlHFpDlApEXxJnCtJ|BvO|AbGWXlElSnADhAtFt@t@l@lCnC`GBhASnAaFn@iAU",
       "url": "https://www.strava.com/activities/20927597568"
     },
@@ -329,7 +344,7 @@
       "elevation_m": 126,
       "avg_speed_kmh": 15.01,
       "max_speed_kmh": 54.5,
-      "kudos": 44,
+      "kudos": 45,
       "polyline": "iw~F{}byRjEn]vHs@lD~BjCv[xC|D{E~EuAFZpAq@t@`A~DmBVi@v@wCnKiAhG?nDy@hBgCrA}AlFVpEuEjDaHnB`DnF_HhFcCd@eNqAmIeNcJ{BcAyGgAL}@_CaCj@iG|FlC|J_@^iEgJsARyAaCj@FfCaDvFyCzBaEiKg_@mJhACw@tI_AaCoHkDcEgGyBoJq@[aAk@z@uKM}F{AyEiIoAeJyDh@o@uAmAEsGsU}BcEsJaKyDdDiE~KoG~EaTlDqHXyNlF}Nw@uE{Au@k@?eAyScHg^uG}A_B}AqGsD@uFkBqQuSyZgJgI_FoNsK}A[uJUsIJiBx@`CxX`ApDDrHj@hC`BTm@n@aDGcB`F{@jJDvK}@hF}G~IkAv@oAWiYv]aJdNwIuCwPKaF{LsCmEyPsFcAeAkNiCeKUuCeAqD_DmDqJsEoHeL_KoBiDoBaAG}FKbCgAYNkCBtBeAh@iW_Ki@o@rAaEaM}EcCvD_AWeIcJ}HwPe@qH~@cHqEoEiAaOfA{KhFeA|GkD~KYvTkChIeEzFuAvHqEnUoW~JsSrAi@|FHbDaFzC`@|JnR_AvCv@s@\\d@qC|CdD_Dt@S`@h@rBkAvDyDHAhCRzR{R|@CmF}EL}@dToVrKuCdHqEtIaPb@wA[i@}MeFoDgEvAuCeCa@qCr@_A_AMmBbBuDlCaChF}L`GmDbCuIfDuDh@aGtDqBVmB}A_ApBgHBiD|@sCvCu@v@mD@e@yCkAlAuFzCmBhHzBzQMQuRxBqSnD{GsIgEQqDtA]|BwCoLiLeO_\\bOoIvHrHbFsEsQ_RaEmAcGRWm@~Ae@Ii@wa@h@yFwB}CwEaDuMj@{Oy@GCi@j@wJgEq@_AyD}Cd@Fd@pP}hAtCmBvKwCfE{CnRoDf`@wL~BaBv@@xB`DhMHZaEjCMxGkWm@iIkEkGe@_Er@}BhBRnBwArH}RvAgIoBuCbAkCrAq@~Meb@tQjErKoYlCoCvEwB|Ei@bFRhNxCfDxBl{Et{A~[jBjFpD`DlGe@nKkHvT}@j@nAf\\OnHo^rhA}CrNcIpVoH|N|MnG~E|Ef@nWr@zEO`JrDnT@jErEnRoAhCfBbEk@e@xB|@vKf\\EfC_FvBvMxb@IzF~@rCNnJ|Ptp@xExK^`EdDhGAfGbCvFpBnWtDzTKlFxDlOnH`d@~AxGnAI`IjW[rAiJVl@BCn@{JS",
       "url": "https://www.strava.com/activities/20915933144"
     },
@@ -362,21 +377,6 @@
       "kudos": 49,
       "polyline": "ce}FoieyRz@gClC{@zBXdFi@L~ClCpMdBlD`@rDbEnPJ|DzA|Eb@hHdAfFzBtZZxGk@lPW|VX~[u@|CAt@`BhDnCvA|Ch@V~@UxA}EpEwAxDN`LbAxF[dENx@t@\\aCv@dApHtACtNmDjPkG|OgJvHmGrEuFrC{Ah@PlJ~N`@K?LQGIf@kB^sDfCi@`AlBbAbEfDw@vA]jDDbEl@rClAhCpB~B~S~LMpAqDvEuBfD{LwG{DeAmByAeFsAgH{@oHQ}BzIOtDnBbCbLnDfG|ElIhDlBvABt@}CfFcBs@W^_C`@ZxBOl@vAt@eAjB{B}@eFMrEJpCv@vBgDBo@b@F~E_KsEyCyF}BsEaEgIiDuBa@sAaAs@}AL_F`BuCf@wCvKn@lLbCfB`BlCf@bNhHnHmMiT{LkCsDy@yBi@aG`@{Ev@eBiEcDmAQWk@bEiEdCw@iK{O_DrAmDtEcA~@sEvDyUdNaWbImFbAc@Wu@oHfCm@sAo@`@kEoAsHIoKpAkDbFcFP{Ay@gAeAAiDoA}AuB_@}Ax@cCQw][i@\\Wh@sJWoI\\sGD}HoCw`@qA_IM{DmBsHRaBwEaRy@yFuAaCmCaNQwH_FcMuA}FeALiBiJoAYm@^Om@t@e@KVkd@qrC{Mke@kCqKNaGaAgEHeFkEkMqFwQuAuHyBeFyBoNqBkGaDqD}@sC|HsDsDiNHwCaCsKy@eHKwD^wC}@oGH}C_@mEUoKsEwEqOkH{DjG{Aj@qB@_JcC_PiGuAcA}g@kP}CReCvG_Bq@]f@_@EiAu@c@r@o@JgNoEqBnCmDq@Ic@h@GEr@hCh@r@UhA}BxMjEx@?Zs@jAz@jAu@~At@|BqG~CObj@bQ`@n@vEzAVMbCbBvMfE~BLbBi@|D{GzOtHlCbBnAzAr@`Yp@vDa@jEXzHlDnOE|DrD|MsH`DI\\x@jCdDrDfBhFtBfNhC|GBrBlF`PGdAl@\\pCvHfB|GFtAi@xBrAxDBlIvRls@hD~Iz@tFOb@y@EgAb@{@vAUpCR~Cz@vBvFfFJnBv@~FhAx@tAP^t@XtEzAvGLfEdA~DVbJtCtKhC|PpApEvArBd@zGbArDvCrJl@l@`EhMKvAc@TeEXgB[",
       "url": "https://www.strava.com/activities/20856386204"
-    },
-    {
-      "id": 20850977281,
-      "name": "ROLLER EARTH 40 075 — DAY 18 | 62.05 KM",
-      "sport_type": "InlineSkate",
-      "date": "2026-11-04",
-      "distance_m": 62059,
-      "moving_time_s": 13699,
-      "elapsed_time_s": 14975,
-      "elevation_m": 38,
-      "avg_speed_kmh": 16.31,
-      "max_speed_kmh": 42.6,
-      "kudos": 50,
-      "polyline": "u~|FwoeyRjBPvF]FxCtC`NvAfCjF~VRjEjBbGLrFlA`GjCrb@QpGw@f@MjBRxISsL|@{@NuJkCa_@gA}Fq@aJwAmEEqDyB_HuB{MyAiCkCoMKwHuD{Ko@i@{AuG{@mA}@sDc@yGwB}DcE{UiCeJm@uN_AaBEyDaBeHiCoZkBcC^uC_@yCqCkFm@mE_E}KgRuq@c@iBb@iE_AcEJeFoJgYLq@yBwFw@aFiB{DgEsT{@{B{CkD}@wC~HgDkDeMAsEuDuSQkE^_Dm@iDg@_X}@{ByC_CvEwFHaDQ{Cw@aD_@OxBmD]qB{FcB|@uBdCgI|AuIl@aAM_@x@aAfZw~@nAeGl@wFcBuYd@wCtAoC|FmR`@sESaDm@qANg@yCgEmBuA{EwAiYmA}LwDE[qEy@[m@wGsAguD_lAoE{A{CuBeHsBkK{@eF`@iE~AeEbEuEjKcDpKLRkAB}NyEa@RkL|^aAvBuAz@m@pBdBjBe@rHeJdUgBlAoBB{@~An@vDQT~DvDlAxH[lFgG`SyB?i@~Dg@JcLQ{BcDs@@uGbDu[zJkRnDgEvCkLdDwNnIyAnAqAvCqAnJBdCoAbCBzB}CtJ_AnFuEpL_ApGT|@m@C~@uC\\oElEuK~@qF|CaKE_BpAwCG_CvAoJzBgEvP_KhLaDxDoCvHmBvHcAj[sJ|GeDx@?|BbDdCQ~G^x@oEjCG`GeSVqEu@mGuEsGSkDt@_BnBE~AmAtH{Sd@?j@aEHkCgBaCt@yB~AaAxM_b@z@KvOxE~CeIhF_O|CcD`EgBrF[dAYtJbAfHvBrCtBviCry@QS^h@hADjmA|_@bVx@bDd@hFpC|CnFj@~DSxEsKt]bBxTc@tK{AtGwRtl@g@ZHj@}AbGgCtFg@lBqBzJ{DlLlGlBNtBgBtBpAnI?hE_CnCBsBgAOXrFfDxE`@rWt@`Ea@hDLlE|DhTOpCzDrNcIlD~@xCxBrBbApBbBbG|AzK`CbGRjDbF|Nb@`BSX|BjEjC|IC~F~@tDAfH`EdO\\B?nArMtd@RnAUVb@GnAfC~AzHkB_@qBpAe@zC`@hHp@x@bF~CXdCd@f@JtEbAbApBZh@~F|AbHHrDhAvEPlIxCvKfC`QrBbGMpAfAtGzAxGpALjAlFr@v@|DjMi@bBeE^oCy@qBlA}@B",
-      "url": "https://www.strava.com/activities/20850977281"
     }
   ]
 }
