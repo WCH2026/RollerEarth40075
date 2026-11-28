@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:43:01.142Z",
+  "generated_at": "2026-11-28T01:28:08.699Z",
   "source": "strava",
   "sport_types": [
     "InlineSkate"
@@ -15,10 +15,10 @@
   },
   "totals": {
     "last_4_weeks": {
-      "count": 21,
-      "distance_m": 1080426,
-      "moving_time_s": 251379,
-      "elevation_m": 959
+      "count": 20,
+      "distance_m": 1011225,
+      "moving_time_s": 235729,
+      "elevation_m": 916
     },
     "year_to_date": {
       "count": 113,
@@ -209,7 +209,7 @@
       "elevation_m": 67,
       "avg_speed_kmh": 15.28,
       "max_speed_kmh": 67.38,
-      "kudos": 30,
+      "kudos": 31,
       "polyline": "ec}FaneyRBc@lN]@vCvB`HL~DfB`Cn@pFxD`OJdEzBnIlAvLtCdb@SnH_At@NjKaCbCqOIUhAaMe@aA`@oAfCwIF{Cn@aEtCbEzG_Bn@q@a@`@SXwCY|ADA[pBhCq@sAuC_CwBrBgBJfA~\\rZxD|GlA`H]nHyA`Fb@|Ee@`CtBpKDdL_Av@y@tAT~AnAz@tFr@|FSdYaGnYaMxM}IlImJtC}At@d@~J`O{BpByD~@q@dAnHvEgAbEOnEzA|GtC~DbALf@~@lPbJVr@yHlLeQsHoGkDeKaBcIQkCfJa@jEtNnFzIlGrBb@zH|E[xAmCjDuAu@_@j@eC^LdDhAz@}@~AyHoA|HnAzFoKdAs@z@oCgJcGcAG{HaGuO{FbAwHhC}F[GzJ^hIvA|C`A`B`BrQ~HxDcEdCaGyTuM}C{EgAsIvAqH{DwCqBy@dAkB|EoAf@sAgKsOoDtAcGrHeTjNuUjJ{LvCkBA{@oHbC{@{@MO}@^yCoAwIEoJnAsD`F_FR}Ae@}@yALoDsBuBgEx@iCO{KI_MXa[f@yPq@}Ku@uG[CQgLmAwHTeA_DgRmFmV{AqCkCuMOaIyDmIJs@s@s@sA}G_CaGc@iEkHtE_Ap@|H{F_AuDwFy]mBaFQoJqEk[oDoBkAwJmFyEcAiCQiDb@uC`AkAxB_@y@gGeE{KcR_r@B}GaAmEJeF_L}]gFuQ_E{SiAmCiE_H|HyDmDoMFkD}D}TPqJq@_E}@{XyEiDN]wOkHsDjGgEr@eNaEiLoEMk@aj@_Q}CPwBfGwB]aAn@u@_A{Ax@gNuEcAbC_AVkDqA|@KqDc@aIcD}Fj@oSmGw@}@cL}Dq@s@t@iCkCa@kA{AqCeAqFiAh@v@Aa@vG~AJYvBfChCj@e@dCh@x@lL|DnDrBzOtElFm@~QhHjA_@dA_C`NxEvA{@rAv@j@}@pB~@xBoG`DUzf@|OnQrH~KdDhE_@dE}GdSlKjBzBl@vWt@vEKxKtD~RBnEbDfMmHrCIh@t@`C~E|HrD~RfDnLzMrb@EvFbAdEEvG`Txv@fClGt@jFI`@gC^w@`BUtC`@~D`HlHlA`KnDfBzBlNNjE`AfD`@|KrCfKbCpPpApE|AzBf@jHdMh_@o@hB",
       "url": "https://www.strava.com/activities/21132001333"
     },
@@ -224,7 +224,7 @@
       "elevation_m": 33,
       "avg_speed_kmh": 16.18,
       "max_speed_kmh": 33.98,
-      "kudos": 37,
+      "kudos": 38,
       "polyline": "q_}FuoeyRtCXbFg@L~CdCxLzAzCz@lGzDjO?pCbBxF`@|HhAlFrC|a@QfH}@|@DlLIeLJk@l@SNqJqCa`@mAqGW}F{AiFMeEwDaO{@aGuAeCHgAc@SqBmJ[iJyEeL}EyQ{@Nt@a@Q{D_BaCuAcFgCwPmC}J_@{JeA{DOwEwAgGc@kFoD}AYuFe@QIoBmF_Fq@uAc@iFTiB`AgB|B[Ni@}@aFiCwGaTuv@BsH_AqDLaFcNic@m@eE{BeFqBuMmAmEw@uB}CiDw@gCrH}CJ[qDsM@wDcCyKq@mGM_E\\kDw@}FDqI_@mBAwFu@wBeDoCbF{FAkDuAmIXkAlAkA_@yBsE}@g@c@zDiLpByJj@m@[_@|@_AzY_~@~AsH\\eHqAsXjJkZf@oEu@yGkDoF_DeBqCo@_W{@yDaAkmE_vAqxBt}As@rCHbBr@fB`DrDz@nEBvD}EzSiAvBwB@g@xDo@PmHm@aBVaB}CqAKqBhBkDh@iHxCcEv@gL|DyHbAkHjBuEzCuBp@}GdByQ~KwAjDc@nFo@nBBjCoApCDjBeDrK}@bF_ErJqAhIGbAzAsKdE}Jp@kEjDgLEsBnAeCCiCpA_Jf@aBbBuBbF{B~HsF~GeB`Cw@vDmCnHqBzIkAxFuBp@H`BgArNaEvGaDx@@xA`BPz@hIEpBX|@oEbCAtF_RVoANcEmAoHmEaGEgCv@cBpBEbBoAhI{Sp@}BNmEkBmB~@qCnAm@bNkb@j@MfPzEz@gB@u@t@q@vGwRlCqCbDiBxHaAnKz@jHvBxCrBfCz@z~@fYhtA~c@fW|HXKbSrHbUpGrTp@|Ep@nEhCbDbGb@lEKfFs@|@wIrXvArYi@~Ia@j@cMl`@mM`b@_@X_AnDcBnIuDrK`GbBV|BeBjCvAtIArDeFrFvDtCx@vCN|Sp@xEYfELpDv@bH`CrKGhD`ChIl@fCh@|DIl@cAp@Ct@zBhE\\WTFbAbFpExKpBvGOHf@Tb@zC@`DpAnK`AxDSrGrAvFO|EbAxDGtGfRzr@dE~K@fGoBr@s@vBNlGv@jBrFzEjA~JjDtAh@hG|AdHFfDhApERtIpC|J\\HJxE`BfJrAvExAnBUn@ZR`@rF`EfLRhBtEtKVxBKdAwEl@}A]o@h@V]",
       "url": "https://www.strava.com/activities/21119619094"
     },
@@ -239,7 +239,7 @@
       "elevation_m": 23,
       "avg_speed_kmh": 15.74,
       "max_speed_kmh": 45.07,
-      "kudos": 31,
+      "kudos": 32,
       "polyline": "qb}FkneyR^OD]rBBdAJTPpEe@TEF}AQmAcCyFg@cCm@o@MiAuAoEm@aAqAyEU_G}BuD_AaEIsAoAwFg@uEw@wDc@w@q@mC]{JIa@[OLg@q@kBKaEyAcGc@yFa@_@qAOaA_AD_A_@oADuA_@]QyBoF_Fq@aBY{DVmCv@mAz@[`AANg@_AwFm@_AmDsLe@WJ]cAqEaNye@[{BToEeAaEXeCI_BgBsGmBiEoGkTi@gE_BwCo@gCm@}EU?Ds@i@cD_AgDwAaD_BgBa@Ow@qCH[jHgCq@mEuBuGAoEa@uAQ{BmAgEm@gFQkE\\sDo@aEAsF[kEAmHYsAeAqAiB{@c@aAqM_G}@e@QBwC|F}B|@mBEsIeCuA{@kASc@_@eIkCc@o@{Ak@ag@uO}CNcCfGmBe@g@l@sAa@GYi@r@k@HmN{E_AhCkAPsCaAAUsGgB}@u@mBk@}Bl@oB?eMqD{Ai@Q[aBSu@{@iLaEs@u@t@iC}@CoAc@{@}@aB}@{DmATIsCMz@r@tDj@jDbAx@bAxAb@n@Co@nCh@l@bL|Dj@p@x@LxAx@tOvEtA?fDm@jGpC|AXzBlAzBj@t@Ux@aCNCvMlEr@?b@q@D^hAJMLXBn@qAjA`Af@BrBiGfDOxh@rPl@T^n@rGhBrA|@vChA|IdCtCC~@e@vCqEd@aAIBn@T^j@|PhIzAxAf@xB?dKXzBCvEB`@d@HIv@TbB_@tDJrDt@rGfAbDz@bGMzBxD|N_@f@cGpBYb@x@fCtBnBlA`CxAfFfBvLf@fB~A`D`@~D`@f@O`@l@z@jFrQ`A~Aj@bC`@p@|@zE?nAYxAdAjEGhG`T`w@rAbEt@hAz@|FIZ_ADkA^u@vAUdD`@xDz@vAbE|C^p@NrBd@`AErAVf@@pAfAt@jAF^b@^~E|AfHJxDl@nA^hCN~HhBtGt@jD\\tDbBfJpAxEUf@r@`B|@pGfAjGRPlAEpA|Fn@n@h@~BtC~H@fA]`@yEn@UOcCMiB`@OXe@a@",
       "url": "https://www.strava.com/activities/21114059581"
     },
